@@ -22,11 +22,10 @@ C/C++ database arduino raspberrypi IoT
  - database book Chapter01, chapter03
     - create database;
     - create 3 tables
-        - bookid
-        - bookname
+        - book
         - publisher
         - price 
     - put data into database --> insert into ... values(...);
     - grant all privileges on *.* to 'root'@'localbost' identified by '1234'
- - create test db by using windows cli 
+ - create test db by using Windows cli 
 
