@@ -29,3 +29,7 @@ C/C++ database arduino raspberrypi IoT
     - grant all privileges on *.* to 'root'@'localbost' identified by '1234'
  - create test db by using Windows cli 
 
+
+ ## 2024-02-23
+ ---
+
