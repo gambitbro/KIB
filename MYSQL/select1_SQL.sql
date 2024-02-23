@@ -1,3 +1,5 @@
+use madangdb;
+
 -- example 1
 select bookname, price from Book;
 -- example 2
@@ -36,4 +38,16 @@ select * from Book order by bookname;
 select * from Book order by bookname desc;
 
 -- example 3-14
-select * from Book order by price desc, publisher asc;
+select * from Book order by price desc, publisher asc
+
+-- example 3-15, 3-16
+select * from Orders;
+select sum(saleprice) from Orders;
+select sum(saleprice) from Orders where custid=2;
+
+-- example 3-17
+select sum(saleprice),
+	avg(saleprice),
+    min(saleprice),
+    max(saleprice)
+from Orders;
