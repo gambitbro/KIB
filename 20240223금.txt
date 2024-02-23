@@ -37,3 +37,20 @@ distinct -> 겹치지않게 output ex) select distinct
 
 
 관계 데이터 모델
+
+데이터베이스모델 -> relation = table
+
+스키마
+	- 속성 (int)->>도메인
+
+키(속성)
+	- 슈퍼키
+		- 후보키 : 중복x NULLx, PK(기본키)가 포함
+	- 외래키(FK)
+
+무결성
+	- 도메인 무결성
+	- 개체 무결성 : PK는 하나만, NULL이면 안된다
+	- 참조 무결성 : FK관련(cascade, distinct)
+
+관계대
