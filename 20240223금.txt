@@ -1,0 +1,39 @@
+[복습]
+
+데이터베이스 : 정보(데이터) 모아놓은 것 (구조적)
+
+1. 장점 : 실시간성, 계속 변화한다, 동시 공유 가능성, 내용으로 참조
+
+
+'SQL' ex) create, grant, select(제일 많이 나옴), delete
+
+
+DBMS(MySQL)
+
+
+데이터베이스 구조
+	- 외부 스키마 -> 여러 테이블을 여러 유저그룹에 나누어 따로 보여주게한다
+	- 개념 스키마 -> 데이터와의 관계, 제약사항 
+	- 내부 스키마
+
+
+Windows -> workbench -> DBMS
+Linux -> workbench, vscode -> DBMS
+
+github
+
+
+
+##2024-02-23
+
+SQL 언어 문장의 기능에 따른 분류
+	- 데이터 정의어(DDL) : data definition language, CREATE, ALTER, DROP문 등
+	- 데이터 조작어(DML) : data manipulation language, SELECT, INSERT, DELETE문 등
+ 	- 데이터 제어어(DCL) : 데이터의 사용 권한을 관리하는 데 사용 GRANT, REVOKE문 등
+
+
+
+distinct -> 겹치지않게 output ex) select distinct
+
+
+관계 데이터 모델
