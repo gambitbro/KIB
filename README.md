@@ -30,21 +30,23 @@ C/C++ database arduino raspberrypi IoT
  - create test db by using Windows cli 
 
 
- ## 2024-02-23
- ---
+## 2024-02-23
+---
 
 ## 2024-02-29 목
 ---
 
 - Makefile 만들기
-   - Makefile 만들기 -> touch Makefile
-   - make -> Makefile 실행
-   - make clean -> Makefile에 있는 clean 명령 실행
-   - TARGET = '' -> 타겟 지정(변수), ${TARGET}으로 대체
-   - circle: $@ -> circle.c 생략
+  - Makefile 만들기 -> touch Makefile
+  - make -> Makefile 실행
+  - make clean -> Makefile에 있는 clean 명령 실행
+  - TARGET = '' -> 타겟 지정(변수), ${TARGET}으로 대체
+  - circle: $@ -> circle.c 생략
  
-- MYSQL - select_groupby.sql파일
-        - DDL.sql파일
-        - DCL.sql파일
-        - built_in_function.sql파일
+- MYSQL
+  - 조인 -> 같은 조건에서 조인한다. 다만 NULL값이 있는 경우, 1) inner join -> NULL값을 뺌, 2) outer join -> NULL값을 남김.
+  - select_groupby.sql파일
+  - DDL.sql파일
+  - DCL.sql파일
+  - built_in_function.sql파일
       
