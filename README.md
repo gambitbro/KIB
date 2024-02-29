@@ -33,6 +33,13 @@ C/C++ database arduino raspberrypi IoT
  ## 2024-02-23
  ---
 
- ## 2024-02-29 목
+## 2024-02-29 목
+---
 
- 
+- Makefile 만들기
+   - Makefile 만들기 -> touch Makefile
+   - make -> Makefile 실행
+   - make clean -> Makefile에 있는 clean 명령 실행
+   - TARGET = '' -> 타겟 지정(변수), ${TARGET}으로 대체
+   - circle: $@ -> circle.c 생략 
+   -  
