@@ -41,5 +41,10 @@ C/C++ database arduino raspberrypi IoT
    - make -> Makefile 실행
    - make clean -> Makefile에 있는 clean 명령 실행
    - TARGET = '' -> 타겟 지정(변수), ${TARGET}으로 대체
-   - circle: $@ -> circle.c 생략 
-   -  
+   - circle: $@ -> circle.c 생략
+ 
+- MYSQL - select_groupby.sql파일
+        - DDL.sql파일
+        - DCL.sql파일
+        - built_in_function.sql파일
+      
