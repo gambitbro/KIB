@@ -51,3 +51,15 @@ select sum(saleprice),
     min(saleprice),
     max(saleprice)
 from Orders;
+
+-- example 3-18
+select count(*) from Orders;
+select count(phone) from Customer; -- without NULL
+
+-- example 3-19
+select sum(saleprice), count(*) from Orders group by custid;
+select sum(saleprice), count(*) from Orders where
+saleprice >= 8000
+	group by custid
+    having count(*) >= 2;
+    
