@@ -54,5 +54,19 @@ C/C++ database arduino raspberrypi IoT
 ## 2024-03-05 화
 ---
 
+## 2024-03-07 목
+---
+- MYSQL에서 꼭 필요한 능력(sql문법, 데이터베이스 운영, webDB, 개인서버 운영)
 
-      
+- MYSQL 
+  - 229p NULL값처리 시작
+  - NULL -> 아직 지정되지 않은 값(없다는 뜻 아님)
+  - 빅데이터를 할 경우 NULL값을 잘 처리해야 한다
+  - ifnull(column, '...') -> ...값을 column에 넣는다(NULL일 경우)
+  - 행 번호 출력
+    - set @seq:=0;
+
+  - 부속질의(subquery)
+    - where 부속질의 - 중첩질의
+    - select 부속질의
+    - from 부속질의 - view를 쓰는 것과 같은 상황
