@@ -24,7 +24,7 @@ C/C++ database arduino raspberrypi IoT
     - create 3 tables
         - book
         - publisher
-        - price 
+        - price
     - put data into database --> insert into ... values(...);
     - grant all privileges on *.* to 'root'@'localbost' identified by '1234'
  - create test db by using Windows
