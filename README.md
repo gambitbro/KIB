@@ -65,6 +65,7 @@ C/C++ database arduino raspberrypi IoT
     - ifnull(column, '...') -> ...값을 column에 넣는다(NULL일 경우)
     - 행 번호 출력
       - set @seq:=0;
+  
   - 부속질의(subquery)
     - where 부속질의 - 중첩질의
     - select 부속질의
@@ -91,12 +92,17 @@ C/C++ database arduino raspberrypi IoT
 
 
   - 데이터베이스 프로그래밍(database programming)
+   
     - 1. 데이터베이스 프로그래밍 방법
       - 1) SQL 전용언어를 사용
       - 2) 일반 프로그래밍 언어에 SQL을 삽입하여 사용
       - 3) 웹 프로그래밍 언어에 SQL을 삽입하여 사용
       - 4) 4th Generation Language
+    
     - 2. 저장 프로그램
-      - 프로시저 : 선언부 실행부로 구성
+      - 프로시저 : 선언부 실행부로 구성, 독립적으로 프로세스가 돌아감
+      - 연산의 중간중간에 변화를 주고 싶을 때 -> 커서
       - procedure.sql 파일 참고
-      
+      - 데이터의 변경(insert, delete, update)문이 실행될 때 자동으로 같이 실행 -> 트리거
+      - 사용자 정의 함수 (query문 안쪽에서 쓸 수 있다. 프로시저는 call을 해야함)
+      - trigger.sql 파일 참고
