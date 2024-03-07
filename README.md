@@ -27,7 +27,7 @@ C/C++ database arduino raspberrypi IoT
         - price 
     - put data into database --> insert into ... values(...);
     - grant all privileges on *.* to 'root'@'localbost' identified by '1234'
- - create test db by using Windows cli 
+ - create test db by using Windows
 
 
 ## 2024-02-23
