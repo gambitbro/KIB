@@ -88,3 +88,15 @@ C/C++ database arduino raspberrypi IoT
       - 인덱스를 만들어놔도 무조건 쓰이진않음, 많이 넣는게 항상 좋진않다
   
   - index.sql 파일 참고
+
+
+  - 데이터베이스 프로그래밍(database programming)
+    - 1. 데이터베이스 프로그래밍 방법
+      - 1) SQL 전용언어를 사용
+      - 2) 일반 프로그래밍 언어에 SQL을 삽입하여 사용
+      - 3) 웹 프로그래밍 언어에 SQL을 삽입하여 사용
+      - 4) 4th Generation Language
+    - 2. 저장 프로그램
+      - 프로시저 : 선언부 실행부로 구성
+      - procedure.sql 파일 참고
+      
