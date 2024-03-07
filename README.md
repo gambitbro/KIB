@@ -69,5 +69,11 @@ C/C++ database arduino raspberrypi IoT
     - where 부속질의 - 중첩질의
     - select 부속질의
     - from 부속질의 - view를 쓰는 것과 같은 상황
+  
   - NULL, subquery.sql 파일
 
+  - 뷰(view)
+    - 장점 : 편리하다, 보안성이 있음
+    - 원본을 변경하면 뷰도 변하고, 뷰를 변경하면 원본도 변함
+    - 삽입, 삭제, 갱신 연산에 많은 제약이 따름
+    - 

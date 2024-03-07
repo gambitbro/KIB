@@ -1,0 +1,3 @@
+use madangdb;
+
+create view 

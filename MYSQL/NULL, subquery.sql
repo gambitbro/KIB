@@ -77,3 +77,15 @@ set bname = (select bookname
 			where Book.bookid = Orders.bookid);
             
 select * from Orders;
+
+-- 4-19 고객번호가 2 이하인 고객의 판매액을 나타내시오(고객이름과 고객별 판매액 출력)
+select cs.name, sum(od.saleprice)
+from (select custid, name
+		from Customer cs
+        where custid <= 2) cs, Orders od
+where cs.custid = od.custid
+group by cs.name;
+
+
+
+
