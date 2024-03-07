@@ -106,3 +106,6 @@ C/C++ database arduino raspberrypi IoT
       - 데이터의 변경(insert, delete, update)문이 실행될 때 자동으로 같이 실행 -> 트리거
       - 사용자 정의 함수 (query문 안쪽에서 쓸 수 있다. 프로시저는 call을 해야함)
       - trigger.sql 파일 참고
+  
+  - python3
+
