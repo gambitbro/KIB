@@ -45,10 +45,15 @@ C/C++ database arduino raspberrypi IoT
  
 - MYSQL
   - 조인 -> 같은 조건에서 조인한다. 다만 NULL값이 있는 경우, 1) inner join -> NULL값을 뺌, 2) outer join -> NULL값을 남김.
-  - select_groupby.sql파일
-  - DDL.sql 파일 참고
-  - DCL.sql 파일 참고
-  - built_in_function.sql 파일 참고
+  
+  - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/select_groupby.sql)
+
+  - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/DDL.sql)
+
+  - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/DCL.sql)
+
+  - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/built_in_function.sql)
+
 
 
 ## 2024-03-05 화
@@ -79,7 +84,7 @@ C/C++ database arduino raspberrypi IoT
     - 삽입, 삭제, 갱신 연산에 많은 제약이 따름
     - 뷰는 수정할 때 alter가 아닌 create or replace 를 쓴다 (실체가 없을 수도 있어서)
     
-  - view.sql 파일 참고
+  - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/view.sql)
 
   - 인덱스(index)
     - 인덱스와 B-tree : 루트 노드/내부 노드/리프 노드 -> 데이터 테이블
@@ -88,7 +93,7 @@ C/C++ database arduino raspberrypi IoT
       - 클러스터 인덱스와 보조 인덱스는 보통 같이 사용
       - 인덱스를 만들어놔도 무조건 쓰이진않음, 많이 넣는게 항상 좋진않다
   
-  - index.sql 파일 참고
+  - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/index.sql)
 
 
   - 데이터베이스 프로그래밍(database programming)
@@ -102,10 +107,12 @@ C/C++ database arduino raspberrypi IoT
     - 2. 저장 프로그램
       - 프로시저 : 선언부 실행부로 구성, 독립적으로 프로세스가 돌아감
       - 연산의 중간중간에 변화를 주고 싶을 때 -> 커서
-      - procedure.sql 파일 참고
+     
+      - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/procedure.sql)
+      
       - 데이터의 변경(insert, delete, update)문이 실행될 때 자동으로 같이 실행 -> 트리거
       - 사용자 정의 함수 (query문 안쪽에서 쓸 수 있다. 프로시저는 call을 해야함)
-      - trigger.sql 파일 참고
-  
-  - python3
+      
+      - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/trigger.sql)
 
+- python3
