@@ -65,8 +65,9 @@ C/C++ database arduino raspberrypi IoT
   - ifnull(column, '...') -> ...값을 column에 넣는다(NULL일 경우)
   - 행 번호 출력
     - set @seq:=0;
-
   - 부속질의(subquery)
     - where 부속질의 - 중첩질의
     - select 부속질의
     - from 부속질의 - view를 쓰는 것과 같은 상황
+  - NULL, subquery.sql 파일
+

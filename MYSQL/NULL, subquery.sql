@@ -23,6 +23,8 @@ select (@seq:=@seq+1), custid, name, phone
 from Customer
 where @seq < 2;
 
+-- 중첩 부속질의 --
+
 -- 4-12 example 평균 주문금액 이하의 주문에 대해서 주문번호와 금액을 나타내시오 - 중첩질의/비교연산자
 select orderid, saleprice, (select avg(saleprice) from Orders)
 from Orders
@@ -36,4 +38,42 @@ where saleprice > (select avg(saleprice)
 					from Orders od2
                     where od1.custid = od2.custid);
                     
+-- 4-14 example 대한민국에 거주하는 고객에게 판매한 도서의 총판매액을 구하시오
+select sum(saleprice) total
+from Orders
+where custid in (select custid
+from Customer                    
+where address like "%대한민국%");
 
+-- 4-15 example 3번 고객이 주문한 도서의 최고 금액보다 더 비싼 도서를 구입한 주문의 주문번호와 판매금액을 보이시오
+select orderid, saleprice
+from Orders
+where saleprice > all (select saleprice
+						from Orders
+                        where custid=3);
+
+-- 4-16 EXISTS 연산자를 사용하여 대한민국에 거주하는 고객에게 판매한 도서의 총판매액을 구하시오.
+select sum(saleprice) total
+from Orders od
+where exists (select *
+				from Customer cs
+                where address like "%대한민국%" and cs.custid=od.custid);
+                
+-- 스칼라 부속질의 --
+
+-- 4-17 마당서점의 고객별 판매액을 나타내시오(고객이름과 고객별 판매액 출력)
+select (select name
+		from Customer cs
+        where cs.custid=od.custid) name, sum(saleprice)
+from Orders od
+group by od.custid;
+
+-- 4-18 Orders 테이블에 각 주문에 맞는 도서이름을 입력하시오
+alter table Orders add bname varchar(40);
+
+update Orders
+set bname = (select bookname
+			from Book
+			where Book.bookid = Orders.bookid);
+            
+select * from Orders;
