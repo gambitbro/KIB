@@ -124,12 +124,30 @@ C/C++ database arduino raspberrypi IoT
 - 소스 -> 프로그램 -> 배포
 - CMakeLists -> 중요함
 
+- CMakeLists를 이용한 빌드와 디버깅
+- flask를 이용하여 MySQL 자료 웹으로 띄우기
+
+
 - [참고](file:/home/qq42/KUIOT/KIB/PYTHON_C_MYSQL/CMakeLists.txt)
 
 - [참고](file:/home/qq42/KUIOT/KIB/PYTHON_C_MYSQL/booklist.c)
 
 - [참고](file:/home/qq42/KUIOT/KIB/flaskweb/app.py)
 
+- web framework
+  - python : flask, django
+  - java : spring
+  - c++ : wt, poco
 
-
-
+- MySQL
+  - IE 표기법
+  - 정규화
+    - 이상현상
+    - 함수 종속성 (어떤 속성값  A값을 알면 B는 결정된다 / - A는 B의 결정자 / A -> B )
+    - 릴레이션 R(K, A1, A2, A3 ...)에서 K가 기본키이면 K -> R이 성립한다. 즉, 기본키는 릴레이션의 모든 속성에 대한 결정자이다.
+    - 제 1 정규형 : 모든 속성 값이 원자값을 가진다
+    - 제 2 정규형 : 제 1 정규형을 만족한 상태에서 기본키가 아닌 속성이 기본키에 완전 함수 종속일 때 제 2 정규형, 불완전 함수 종속이 없어야한다
+    - 제 3 정규형 : 릴레이션이 제 2 정규형이고, 기본키가 아닌 속성이 기본키에 비이행적으로 종속할 때 제 3정규형
+    - BCNF 정규형 : 릴레이션 R에서 함수 종속성 X -> Y 가 성립할 때 모든 결정자 X가 후보키이면 BCNF 정규형
+    - 무손실 분해
+  -  
