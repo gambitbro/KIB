@@ -122,3 +122,14 @@ C/C++ database arduino raspberrypi IoT
 ---
 - 헤더 살펴보기
 - 소스 -> 프로그램 -> 배포
+- CMakeLists -> 중요함
+
+- [참고](file:/home/qq42/KUIOT/KIB/PYTHON_C_MYSQL/CMakeLists.txt)
+
+- [참고](file:/home/qq42/KUIOT/KIB/PYTHON_C_MYSQL/booklist.c)
+
+- [참고](file:/home/qq42/KUIOT/KIB/flaskweb/app.py)
+
+
+
+
