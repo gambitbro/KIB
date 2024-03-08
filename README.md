@@ -116,3 +116,9 @@ C/C++ database arduino raspberrypi IoT
       - [참고](file:/home/qq42/KUIOT/KIB/MYSQL/trigger.sql)
 
 - python3
+
+
+## 2024-03-08 금
+---
+- 헤더 살펴보기
+- 소스 -> 프로그램 -> 배포
