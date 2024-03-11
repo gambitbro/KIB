@@ -163,7 +163,5 @@ C/C++ database arduino raspberrypi IoT
     - 락의 유형
       - 공유락 shared lock
       - 배타락 exclusive lock
-      - 데드락 (deadlock 교착상태) : 두 개 이상의 트랜잭션이 각각 자신의 데이터에 대하여 락을 획득하고 
+      - 데드락 (deadlock 교착상태) : 두 개 이상의 트랜잭션이 각각 자신의 데이터에 대하여 락을 획득하고
         상대방 데이터에 대하여 락을 요청하면 무한 대기 상태에 빠질 수 있음
-
-        

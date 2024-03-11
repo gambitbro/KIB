@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-int sumMatrix(int (*m)[4], int row, int col)
+int sumMatrix(int (*matrix)[4], int row, int col)
+//int sumMatrix(int matrix[][4], int row, int col) // 앞에 matrix[][4]는 포인터다. 배열은 복사안됨.
 {
 	int sum = 0;
 	for (int i = 0 ; i < row ; ++i){
 		for (int j = 0 ; j < col ; ++j){
-			sum = sum + m[i][j];	// *(m[i] + j) == *(*(m + i) + j); == m[i][j] 
+			sum = sum + matrix[i][j];	// *(matrix[i] + j) == *(*(matrix + i) + j); == m[i][j]
+			// nums[i] == *(nums + i); 
 		}
 	}
-	
 	return sum;
 }
 
