@@ -1,7 +1,9 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "mysql.h": "c"
+        "mysql.h": "c",
+        "string.h": "c",
+        "sstream": "c"
     },
     "cmake.options.statusBarVisibility": "visible",
     "cmake.sourceDirectory": "/home/qq42/KUIOT/KIB/PYTHON_C_MYSQL"
