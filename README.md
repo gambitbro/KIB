@@ -220,3 +220,10 @@ C/C++ database arduino raspberrypi IoT
       //b = b + 1;
   
   - 복합대입 연산자 : a += 20;    // a와 20을 더한 결과를 다시 a에 저장.
+
+  - switch-case문 : break 사용과 break을 생략하고 쓰는 경우
+
+  - for문, while문, do-while문
+    - for문 : 횟수를 정해서 반복 할 때 많이 씀.
+    - while문 : 조건이 참일 때, 계속해서 반복하다가 조건이 맞지않으면 빠져나올 때.
+    - do-while문 : 한번은 무조건 실행시키게 할 때.
