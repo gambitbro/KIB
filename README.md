@@ -230,6 +230,41 @@ C/C++ database arduino raspberrypi IoT
 
 # 2024-03-28 목
 ---------------
-- 매개변수(parameter)와 인자(argument)의 차이
-  - 인자는 값이다. 함수를 호출했을 때, 넣어주는 인자의 값이 중요하다.
-  - 
+ - C언어 훑어보기
+
+  - 매개변수(parameter)와 인자(argument)의 차이
+    - 인자는 값이다. 함수를 호출했을 때, 넣어주는 인자의 값이 중요하다.
+    - 함수 구현쪽의 parameter와 호출시 쓰는 argument는 다르다.
+
+  - double형 배열의 초기화는 0.0
+    char형 배열의 초기화는 NULL
+  
+  - 배열에서의 변수명 자체가 주소가 되는것
+    - int형이면 4바이트를 잡기때문에, 주소값도 4씩 증가한다
+      printf("score[0]의 주소 : %p\n", score);      //배열의 이름은 0번지 주소
+      printf("score[1]의 주소 : %p\n", score+1);    //score[1]의 주소, 이름에 +1
+  
+  - char str[] = {'a', 'p', 'p', 'l', 'e', 'j', 'a', 'm'};    //문자의 배열(null값이 없다)
+    char str1[80] = "applejam";   //문자열 
+
+  - sizeof 연산자를 활용한 배열처리
+    - count = sizeof(score)/sizeof(score[0]);   //배열 요소의 개수 계산, 뒤의 score[0]의 크기가 int면 int로 나눠주고 double이면 double로 나눠주는 형태
+
+  - strcpy(str1, "tiger");
+    - str1 : char형 목적지 주소값
+    - "tiger" : 넣어줄 문자열의 주소값
+
+  - MSB : 최상위 비트
+    LSB : 최하위 비트
+
+  - 지역변수들은 stack영역에 저장이 된다. 그래서 사라질 변수들은 heap영역에 넣어줘야 한다.
+
+  - stack영역 : LIFO (last in, first out)
+    stack영역의 변수들은 사라지니까(함수가 끝나면 지역변수가 사라지니까) malloc을 써서, 함수에서 나온 return값을 heap에 저장한다.
+
+  
+
+
+
+
+
