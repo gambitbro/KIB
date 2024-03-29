@@ -6,7 +6,6 @@ int main(void)
     int num2 = 0;
     char operator = 0;
 
-
     for(;;){
 
         //입력
@@ -27,7 +26,7 @@ int main(void)
             printf("입력이 잘못됐습니다.\n");
             continue;
         }
-
+        
         //출력
         printf("%d %c %d = %d\n", num1, operator, num2, result);
     }

@@ -262,6 +262,13 @@ C/C++ database arduino raspberrypi IoT
   - stack영역 : LIFO (last in, first out)
     stack영역의 변수들은 사라지니까(함수가 끝나면 지역변수가 사라지니까) malloc을 써서, 함수에서 나온 return값을 heap에 저장한다.
 
+
+# 2024-03-29 금
+---------------
+- C언어 실습(예제)
+  
+  - 
+
   
 
 
