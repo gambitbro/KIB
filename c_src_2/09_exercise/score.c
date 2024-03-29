@@ -37,10 +37,9 @@ int main(void)
     int audience = 65;
     double rate;
 
-    rate = 100*((double)audience / (double)seats);
+    rate = 100.0*( (double)audience / (double)seats );
 
     printf("입장률 : %.1f%%\n", rate);
-
 
     return 0;
 }
