@@ -245,7 +245,7 @@ C/C++ database arduino raspberrypi IoT
       printf("score[1]의 주소 : %p\n", score+1);    //score[1]의 주소, 이름에 +1
   
   - char str[] = {'a', 'p', 'p', 'l', 'e', 'j', 'a', 'm'};    //문자의 배열(null값이 없다)
-    char str1[80] = "applejam";   //문자열 
+    char str1[80] = "applejam";   //문자열
 
   - sizeof 연산자를 활용한 배열처리
     - count = sizeof(score)/sizeof(score[0]);   //배열 요소의 개수 계산, 뒤의 score[0]의 크기가 int면 int로 나눠주고 double이면 double로 나눠주는 형태
