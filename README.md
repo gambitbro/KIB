@@ -293,11 +293,4 @@ C/C++ database arduino raspberrypi IoT
   - private, public, protected
     - 아무것도 안쓰면 private.
     - 생성자는 public으로 선언.
-
-
-
-
-
-
-
-
+    

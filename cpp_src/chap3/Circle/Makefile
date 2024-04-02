@@ -9,3 +9,4 @@ main.o : main.cpp
 
 clean :
 	rm *.o main
+
