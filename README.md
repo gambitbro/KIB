@@ -293,4 +293,7 @@ C/C++ database arduino raspberrypi IoT
   - private, public, protected
     - 아무것도 안쓰면 private.
     - 생성자는 public으로 선언.
-    
+
+    # 2024-04-03 수
+    ---------------
+    - 객체 포인터와 객체 배열
