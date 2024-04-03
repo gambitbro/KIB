@@ -16,11 +16,15 @@ public:
     int getHeight();
 };
 
+
+
+
+
 Tower::Tower()
 {
     height = 1;
 }
-void f();
+
 Tower::Tower(int h)
 {
     height = h;
@@ -28,13 +32,16 @@ Tower::Tower(int h)
 
 Tower::~Tower()
 {
-    cout << "객체가 소멸되었습니다.\n";
+    //cout << "객체가 소멸되었습니다.\n";
 }
 
 int Tower::getHeight()
 {
     return height;
 }
+
+
+
 
 int main(void)
 {

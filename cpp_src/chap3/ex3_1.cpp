@@ -44,8 +44,8 @@ double Rectangle::getArea(void)
 int main()
 {
     Circle donut(1);
-    // donut.radius = 1;
-    // double area = donut.getArea();
+    //donut.radius = 1;
+    //double area = donut.getArea();
     // cout << "donut의 면적은 " << area << endl;
     
     Circle pizza(30);

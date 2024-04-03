@@ -8,6 +8,7 @@ public:
     bool power;
     int channel;
     int volume;
+
     //생성자 함수
     TV();       //기본 생성자
     TV(int r1, int r2);     //채널, 음량값을 갖는 생성자
@@ -21,6 +22,11 @@ public:
     void decreaseVolume();
 };
 
+
+
+
+
+
 //클래스 구현
 TV::TV()
 {
@@ -28,12 +34,16 @@ TV::TV()
     channel = 0;
     volume = 0;
 }
+
 TV::TV(int r1, int r2)
 {
     power = false;
     channel = r1;
     volume = r2;
 }
+
+
+
 
 void TV::powerOn()
 {
@@ -70,6 +80,10 @@ void TV::decreaseVolume()
 {
     --volume;
 }
+
+
+
+
 
 //메인 함수
 int main(void)

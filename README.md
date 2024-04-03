@@ -297,3 +297,9 @@ C/C++ database arduino raspberrypi IoT
     # 2024-04-03 수
     ---------------
     - 객체 포인터와 객체 배열
+      - 예시
+          Circle donut;
+          Circle *p; 
+          p = &donut;
+          cout << p->getArea() << endl;
+          cout << (*p).getArea() << endl;   donut.getArea()
