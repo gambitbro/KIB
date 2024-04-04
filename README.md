@@ -294,12 +294,34 @@ C/C++ database arduino raspberrypi IoT
     - 아무것도 안쓰면 private.
     - 생성자는 public으로 선언.
 
-    # 2024-04-03 수
-    ---------------
-    - 객체 포인터와 객체 배열
-      - 예시
-          Circle donut;
-          Circle *p; 
-          p = &donut;
-          cout << p->getArea() << endl;
-          cout << (*p).getArea() << endl;   donut.getArea()
+- # 2024-04-03 수
+---------------
+- 객체 포인터와 객체 배열
+  - 예시
+      Circle donut;
+      Circle *p;
+      p = &donut;
+      cout << p->getArea() << endl;
+      cout << (*p).getArea() << endl;   donut.getArea()
+
+- # 2024-04-04 목
+-----------------
+- C++
+
+  - 클래스의 배열
+    - 객체 배열 : Circle circleArray[3];
+    - 객체 배열 초기화 : Circle circleArray[3] = {Circle(10), Circle(20), Circle()};
+    - 클래스를 만들었을때의 size는 멤버 변수의 size.
+
+  - 동적 메모리 할당
+    - 데이터타입 *포인터변수 = new 데이터타입;
+    - delete 포인터변수;
+    - 배열의 경우? -> 데이터타입 *포인터변수 = new 데이터타입 [배열의크기];
+    - 배열의 경우?-> delete [] 포인터변수;
+    
+    - this 포인터
+      - this는 멤버 함수에서만 사용할 수 있다.
+      - static member function는 this를 사용할 수 없다.
+  
+
+
