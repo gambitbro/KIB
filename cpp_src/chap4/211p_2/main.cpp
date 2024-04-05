@@ -3,7 +3,6 @@ using namespace std;
 
 int main(void)
 {
-
     int *num = new int[5];
     if(!num){
         cout << "메모리를 할당할 수 없습니다.";
