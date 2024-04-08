@@ -10,6 +10,7 @@ int main()
     cout << a << ", " << b << endl;
     cout << *pa << ", " << *pb << endl;
 
-    pa = pb;
+    pa = pb;    //대입
+
     return 0;
 }
