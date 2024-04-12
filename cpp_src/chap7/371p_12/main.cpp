@@ -5,7 +5,7 @@ using namespace std;
 class SortedArray{
     int size;
     int *p;
-    //void sort();
+    void sort();
 public:
     SortedArray();
     ~SortedArray();
@@ -21,6 +21,7 @@ SortedArray::SortedArray()
 {
     this->size = 1;
     this->p = new int [size];
+    sort();
 
 }
 SortedArray::~SortedArray()
@@ -36,6 +37,7 @@ SortedArray::SortedArray(SortedArray &src)
     for(int i=0; i< size; ++i){
         this->p[i] = p[i];
     }
+    sort();
 }
 SortedArray::SortedArray(int p[], int size)
 {
@@ -44,13 +46,14 @@ SortedArray::SortedArray(int p[], int size)
     for(int i=0; i< size; ++i){
         this->p[i] = p[i];
     }
+    sort();
 }
 
 SortedArray SortedArray::operator+(SortedArray &op2)
 {
     SortedArray tmp;
 
-    tmp.size = this->size + op2.size;
+    tmp.size = (this->size + op2.size);
     tmp.p = new int [tmp.size];
 
     for(int i =0; i<tmp.size; ++i){
@@ -58,13 +61,16 @@ SortedArray SortedArray::operator+(SortedArray &op2)
             tmp.p[i] = this->p[i];
         }else{
             tmp.p[i] = op2.p[i-(this->size)];
+            
         }
+        cout << tmp.p[i] << endl;
     }
+    tmp.sort();
     return tmp;
 }
 SortedArray& SortedArray::operator=(const SortedArray &op2)
 {
-    this->size += op2.size;
+    this->size = op2.size;
     this->p = new int [size];
     for(int i=0; i<this->size; ++i){
         this->p[i] = op2.p[i];
@@ -80,17 +86,27 @@ void SortedArray::show()
     cout << endl;
 }
 
+void SortedArray::sort()    //정렬
+{
+    for(int i=0; i<this->size; ++i){
+        for(int j=0; j<this->size; ++j){
+            if(this->p[i] < this->p[j]){
+                int tmp = p[i];
+                p[i] = p[j];
+                p[j] = tmp;
+            }
+        }
+    }
+}
+
 int main(void)
 {
     int n[] = {2, 20, 6};
     int m[] = {10, 7, 8, 30};
+
     SortedArray a(n, 3), b(m, 4), c;
 
-    c = a + b;
-
-    // a.show();
-    // b.show();
-    // c.show();
+    c = (a + b);
 
     a.show();
     b.show();
