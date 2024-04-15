@@ -51,7 +51,7 @@ int main(void)
     SmartTV htv("192.0.0.1", 32);
     cout << "size = " << htv.getSize() << endl;
     cout << "videoIn = " << boolalpha << htv.getVideoIn() << endl;
-    cout << "IP = "8 << htv.getInAddr() << endl;
+    cout << "IP = " << htv.getInAddr() << endl;
     
     return 0;
 }
