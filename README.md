@@ -467,7 +467,7 @@ C/C++ database arduino raspberrypi IoT
 - TCP/IP 소켓 프로그래밍
   - 소켓에 할당되는 IP주소와 PORT번호
     - 인터넷 주소: IP주소체계는 두가지로 나뉜다. IPv4, IPv6.
-  - INADDR_ANY: 0.0.0.0
+  - INADDR_ANY: 0.0.0.0 // 내 아이피 중 어느 것이라도 접속되도록 설정
 
   - TCP와 UDP
     - TCP는 데이터의 전송을 보장하는 프로토콜(신뢰성).
@@ -475,6 +475,11 @@ C/C++ database arduino raspberrypi IoT
     - TCP는 신뢰성을 보장하기 때문에 UDP에 비해 복잡한 프로토콜이다.
 
 
+- # 2024-04-23 화
+-----------------
 
+- TCP/IP 소켓 프로그래밍
+  - DNS서버(Domain Name System)
+    - 
         
 
