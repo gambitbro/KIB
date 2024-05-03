@@ -1,0 +1,10 @@
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/basicOP.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/matOP.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/matOP2.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/matOP3.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/matOP4.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/matOP5.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/rectOP.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/vectorOP.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap03/build/CMakeFiles/rebuild_cache.dir

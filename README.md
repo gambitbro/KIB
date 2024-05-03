@@ -502,3 +502,54 @@ C/C++ database arduino raspberrypi IoT
 -----------------
 
 - 아두이노나 AVR이 센싱이나 액츄에이터 역할을 하고, 그로 인해 얻은 데이터를 UART통신으로 라즈베리파이로 전송
+
+
+- # 2024-04-26 금
+-----------------
+
+- I2C 통신
+  - 마스터가 누구랑 통신할지 먼저 주소값을 보내주는게 우선임.
+  - 주소값은 7비트이기 때문에 128개까지 1:n 통신 가능.
+  - SDA(시리얼 데이터), SCL(시리얼 클럭)
+  - 라즈베리파이에서 온습도 센서, LED, 자이로센서 등과 연결하여 데이터통신을 하기 위해서는 주소가 먼저 필요하다.
+
+- # 2024-04-29 월
+-----------------
+
+- Arduino
+  - 아두이노를 활용한 LED 켜기, 끄기, 인터럽트사용.
+
+
+- # 2024-05-03 금
+-----------------
+
+- OpenCV
+  - 리눅스 환경에서 쓴다.
+  - 영상 획득: 빛->렌즈->센서->ISP->사진파일
+  - BGR순서로 저장
+  - 하나의 픽셀은 unsigned char 3개를 겹쳐서 사용한다.
+
+  - Modern C++
+    - std::vector 클래스
+    - 범위 기반 for
+      - for( declaration : expression ) { loop }
+      - for(auto& age : ages) {cout << ages << endl};   //auto를 넣으면 타입이 자동으로 정해진다. 명확할 때 쓴다.
+    - 람다 표현식(Lambda expression)
+    - 스마트포인터(smart pointer)
+
+  - imread 함수: cv::Mat imread( const String &filename, int flags = IMREAD_COLOR );
+  - destroyWindows 함수
+  - moveWindows 함수
+  - imshow 함수: void imshow(const String &winname, InputArray mat);
+  - waitKey 함수: int waitKey(int delay = 0); 리턴값이 키보드 아스키코드 char값.
+
+  - 기본 자료형 클래스
+    - point_ 클래스
+    - Size_ 클래스
+    - Rect_ 클래스
+    - RotateRect 클래스
+    - Range 클래스
+    - String 클래스
+    - 진짜 중요한 Mat 클래스
+
+  - KIB/openCV/chap1~4 line.cpp까지했음

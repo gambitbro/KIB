@@ -1,0 +1,4 @@
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/line.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/video.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/rebuild_cache.dir
