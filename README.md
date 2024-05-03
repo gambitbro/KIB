@@ -551,5 +551,14 @@ C/C++ database arduino raspberrypi IoT
     - Range 클래스
     - String 클래스
     - 진짜 중요한 Mat 클래스
+      - 얕은 복사 -대입 연산
+      - 깊은 복사 -clone, copyTo
+
+  - imread, imshow, imwrite
+  - VideoCapture, VideoWriter
+  - line 함수
+  - waitKey()
+
+  - CMakeLists.txt 작성법
 
   - KIB/openCV/chap1~4 line.cpp까지했음
