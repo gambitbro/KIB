@@ -63,7 +63,6 @@ CMAKE_BINARY_DIR = /home/qq43/KIB/openCV/chap04/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/BGR_check.dir/all
 all: CMakeFiles/drawPolys.dir/all
 all: CMakeFiles/drawText.dir/all
 all: CMakeFiles/freeTypeFont.dir/all
@@ -73,6 +72,7 @@ all: CMakeFiles/line.dir/all
 all: CMakeFiles/lineTest.dir/all
 all: CMakeFiles/maskSetTo.dir/all
 all: CMakeFiles/mouse.dir/all
+all: CMakeFiles/mouseRGBpoint.dir/all
 all: CMakeFiles/storage.dir/all
 all: CMakeFiles/storageRead.dir/all
 all: CMakeFiles/trackBar.dir/all
@@ -85,7 +85,6 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/BGR_check.dir/clean
 clean: CMakeFiles/drawPolys.dir/clean
 clean: CMakeFiles/drawText.dir/clean
 clean: CMakeFiles/freeTypeFont.dir/clean
@@ -95,6 +94,7 @@ clean: CMakeFiles/line.dir/clean
 clean: CMakeFiles/lineTest.dir/clean
 clean: CMakeFiles/maskSetTo.dir/clean
 clean: CMakeFiles/mouse.dir/clean
+clean: CMakeFiles/mouseRGBpoint.dir/clean
 clean: CMakeFiles/storage.dir/clean
 clean: CMakeFiles/storageRead.dir/clean
 clean: CMakeFiles/trackBar.dir/clean
@@ -103,39 +103,13 @@ clean: CMakeFiles/video.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BGR_check.dir
-
-# All Build rule for target.
-CMakeFiles/BGR_check.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=1,2 "Built target BGR_check"
-.PHONY : CMakeFiles/BGR_check.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/BGR_check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BGR_check.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
-.PHONY : CMakeFiles/BGR_check.dir/rule
-
-# Convenience name for target.
-BGR_check: CMakeFiles/BGR_check.dir/rule
-.PHONY : BGR_check
-
-# clean rule for target.
-CMakeFiles/BGR_check.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/clean
-.PHONY : CMakeFiles/BGR_check.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/drawPolys.dir
 
 # All Build rule for target.
 CMakeFiles/drawPolys.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolys.dir/build.make CMakeFiles/drawPolys.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolys.dir/build.make CMakeFiles/drawPolys.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=3,4 "Built target drawPolys"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=1,2 "Built target drawPolys"
 .PHONY : CMakeFiles/drawPolys.dir/all
 
 # Build rule for subdir invocation for target.
@@ -161,7 +135,7 @@ CMakeFiles/drawPolys.dir/clean:
 CMakeFiles/drawText.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawText.dir/build.make CMakeFiles/drawText.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawText.dir/build.make CMakeFiles/drawText.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=5,6 "Built target drawText"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=3,4 "Built target drawText"
 .PHONY : CMakeFiles/drawText.dir/all
 
 # Build rule for subdir invocation for target.
@@ -187,7 +161,7 @@ CMakeFiles/drawText.dir/clean:
 CMakeFiles/freeTypeFont.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/freeTypeFont.dir/build.make CMakeFiles/freeTypeFont.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/freeTypeFont.dir/build.make CMakeFiles/freeTypeFont.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=7,8 "Built target freeTypeFont"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=5,6 "Built target freeTypeFont"
 .PHONY : CMakeFiles/freeTypeFont.dir/all
 
 # Build rule for subdir invocation for target.
@@ -213,7 +187,7 @@ CMakeFiles/freeTypeFont.dir/clean:
 CMakeFiles/keyboard.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=9,10 "Built target keyboard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=7,8 "Built target keyboard"
 .PHONY : CMakeFiles/keyboard.dir/all
 
 # Build rule for subdir invocation for target.
@@ -239,7 +213,7 @@ CMakeFiles/keyboard.dir/clean:
 CMakeFiles/keyboard2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=11,12 "Built target keyboard2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=9,10 "Built target keyboard2"
 .PHONY : CMakeFiles/keyboard2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -265,7 +239,7 @@ CMakeFiles/keyboard2.dir/clean:
 CMakeFiles/line.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line.dir/build.make CMakeFiles/line.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line.dir/build.make CMakeFiles/line.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=13,14 "Built target line"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=11,12 "Built target line"
 .PHONY : CMakeFiles/line.dir/all
 
 # Build rule for subdir invocation for target.
@@ -291,7 +265,7 @@ CMakeFiles/line.dir/clean:
 CMakeFiles/lineTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=15,16 "Built target lineTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=13,14 "Built target lineTest"
 .PHONY : CMakeFiles/lineTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -317,7 +291,7 @@ CMakeFiles/lineTest.dir/clean:
 CMakeFiles/maskSetTo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskSetTo.dir/build.make CMakeFiles/maskSetTo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskSetTo.dir/build.make CMakeFiles/maskSetTo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=17,18 "Built target maskSetTo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=15,16 "Built target maskSetTo"
 .PHONY : CMakeFiles/maskSetTo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -343,7 +317,7 @@ CMakeFiles/maskSetTo.dir/clean:
 CMakeFiles/mouse.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=19,20 "Built target mouse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=17,18 "Built target mouse"
 .PHONY : CMakeFiles/mouse.dir/all
 
 # Build rule for subdir invocation for target.
@@ -361,6 +335,32 @@ mouse: CMakeFiles/mouse.dir/rule
 CMakeFiles/mouse.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/clean
 .PHONY : CMakeFiles/mouse.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mouseRGBpoint.dir
+
+# All Build rule for target.
+CMakeFiles/mouseRGBpoint.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBpoint.dir/build.make CMakeFiles/mouseRGBpoint.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBpoint.dir/build.make CMakeFiles/mouseRGBpoint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=19,20 "Built target mouseRGBpoint"
+.PHONY : CMakeFiles/mouseRGBpoint.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mouseRGBpoint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mouseRGBpoint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/mouseRGBpoint.dir/rule
+
+# Convenience name for target.
+mouseRGBpoint: CMakeFiles/mouseRGBpoint.dir/rule
+.PHONY : mouseRGBpoint
+
+# clean rule for target.
+CMakeFiles/mouseRGBpoint.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBpoint.dir/build.make CMakeFiles/mouseRGBpoint.dir/clean
+.PHONY : CMakeFiles/mouseRGBpoint.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/storage.dir

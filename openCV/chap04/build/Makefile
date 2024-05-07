@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BGR_check
-
-# Build rule for target.
-BGR_check: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BGR_check
-.PHONY : BGR_check
-
-# fast build rule for target.
-BGR_check/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/build
-.PHONY : BGR_check/fast
-
-#=============================================================================
 # Target rules for targets named drawPolys
 
 # Build rule for target.
@@ -247,6 +234,19 @@ mouse/fast:
 .PHONY : mouse/fast
 
 #=============================================================================
+# Target rules for targets named mouseRGBpoint
+
+# Build rule for target.
+mouseRGBpoint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mouseRGBpoint
+.PHONY : mouseRGBpoint
+
+# fast build rule for target.
+mouseRGBpoint/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBpoint.dir/build.make CMakeFiles/mouseRGBpoint.dir/build
+.PHONY : mouseRGBpoint/fast
+
+#=============================================================================
 # Target rules for targets named storage
 
 # Build rule for target.
@@ -310,30 +310,6 @@ video: cmake_check_build_system
 video/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
 .PHONY : video/fast
-
-BGR_check.o: BGR_check.cpp.o
-.PHONY : BGR_check.o
-
-# target to build an object file
-BGR_check.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/BGR_check.cpp.o
-.PHONY : BGR_check.cpp.o
-
-BGR_check.i: BGR_check.cpp.i
-.PHONY : BGR_check.i
-
-# target to preprocess a source file
-BGR_check.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/BGR_check.cpp.i
-.PHONY : BGR_check.cpp.i
-
-BGR_check.s: BGR_check.cpp.s
-.PHONY : BGR_check.s
-
-# target to generate assembly for a file
-BGR_check.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/BGR_check.cpp.s
-.PHONY : BGR_check.cpp.s
 
 drawPolys.o: drawPolys.cpp.o
 .PHONY : drawPolys.o
@@ -551,6 +527,30 @@ mouse.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/mouse.cpp.s
 .PHONY : mouse.cpp.s
 
+mouseRGBpoint.o: mouseRGBpoint.cpp.o
+.PHONY : mouseRGBpoint.o
+
+# target to build an object file
+mouseRGBpoint.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBpoint.dir/build.make CMakeFiles/mouseRGBpoint.dir/mouseRGBpoint.cpp.o
+.PHONY : mouseRGBpoint.cpp.o
+
+mouseRGBpoint.i: mouseRGBpoint.cpp.i
+.PHONY : mouseRGBpoint.i
+
+# target to preprocess a source file
+mouseRGBpoint.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBpoint.dir/build.make CMakeFiles/mouseRGBpoint.dir/mouseRGBpoint.cpp.i
+.PHONY : mouseRGBpoint.cpp.i
+
+mouseRGBpoint.s: mouseRGBpoint.cpp.s
+.PHONY : mouseRGBpoint.s
+
+# target to generate assembly for a file
+mouseRGBpoint.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBpoint.dir/build.make CMakeFiles/mouseRGBpoint.dir/mouseRGBpoint.cpp.s
+.PHONY : mouseRGBpoint.cpp.s
+
 storage.o: storage.cpp.o
 .PHONY : storage.o
 
@@ -679,7 +679,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BGR_check"
 	@echo "... drawPolys"
 	@echo "... drawText"
 	@echo "... freeTypeFont"
@@ -689,14 +688,12 @@ help:
 	@echo "... lineTest"
 	@echo "... maskSetTo"
 	@echo "... mouse"
+	@echo "... mouseRGBpoint"
 	@echo "... storage"
 	@echo "... storageRead"
 	@echo "... trackBar"
 	@echo "... usefulFunc"
 	@echo "... video"
-	@echo "... BGR_check.o"
-	@echo "... BGR_check.i"
-	@echo "... BGR_check.s"
 	@echo "... drawPolys.o"
 	@echo "... drawPolys.i"
 	@echo "... drawPolys.s"
@@ -724,6 +721,9 @@ help:
 	@echo "... mouse.o"
 	@echo "... mouse.i"
 	@echo "... mouse.s"
+	@echo "... mouseRGBpoint.o"
+	@echo "... mouseRGBpoint.i"
+	@echo "... mouseRGBpoint.s"
 	@echo "... storage.o"
 	@echo "... storage.i"
 	@echo "... storage.s"

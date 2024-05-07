@@ -1,4 +1,3 @@
-/home/qq43/KIB/openCV/chap04/build/CMakeFiles/BGR_check.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/drawPolys.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/drawText.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/freeTypeFont.dir
@@ -8,6 +7,7 @@
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/lineTest.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/maskSetTo.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/mouse.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/mouseRGBpoint.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/storage.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/storageRead.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/trackBar.dir

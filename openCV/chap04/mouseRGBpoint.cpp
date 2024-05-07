@@ -17,7 +17,7 @@ struct MyData{
     Scalar green = Scalar(0, 255, 0);
     Scalar red = Scalar(0, 0, 255);
 
-    vector<Vec3b> = mouseBGR;
+    vector<Vec3b> mouseBGR;
     bool flag = false;
 };
 
@@ -26,6 +26,7 @@ int main()
     MyData myData;
     FileStorage fs;
     myData.img = imread(folder+"lenna.bmp", IMREAD_COLOR);
+    myData.background = myData.img.clone();
 
     namedWindow("img");
     imshow("img", myData.img);
@@ -47,14 +48,18 @@ void onMouse(int event, int x, int y, int flags, void *myData)
     switch (event){
         case EVENT_LBUTTONDOWN:
             ptr->ptOld = Point(x, y);
-            cout << "Event Left Button Down: " << ptr->background.at<uchar>(x, y) << endl;
-            ptr->flag = true;
+            cout << "Event Left Button Down: " << ptr->background.at<Vec3b>(y, x) << endl;
+            ptr->mouseBGR.push_back(ptr->background.at<Vec3b>(y, x));
+            cout << "mouseBGR: ";
+		    for (auto i : ptr->mouseBGR){
+			    cout << i << " ";
+            }
+		    cout << endl;
+            
+		    ptr->flag = true;
             break;
         case EVENT_LBUTTONUP:
-            fs << "Blue" << Blue;
-            fs << "Green" << Green;
-            fs << "Red" << Red;
-
+            ptr->flag = false;
             break;
         case EVENT_MOUSEMOVE:
             if(EVENT_FLAG_LBUTTON){
