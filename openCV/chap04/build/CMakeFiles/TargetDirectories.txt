@@ -1,4 +1,17 @@
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/BGR_check.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/drawPolys.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/drawText.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/freeTypeFont.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/keyboard.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/keyboard2.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/line.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/lineTest.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/maskSetTo.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/mouse.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/storage.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/storageRead.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/trackBar.dir
+/home/qq43/KIB/openCV/chap04/build/CMakeFiles/usefulFunc.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/video.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/edit_cache.dir
 /home/qq43/KIB/openCV/chap04/build/CMakeFiles/rebuild_cache.dir

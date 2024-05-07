@@ -63,7 +63,20 @@ CMAKE_BINARY_DIR = /home/qq43/KIB/openCV/chap04/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/BGR_check.dir/all
+all: CMakeFiles/drawPolys.dir/all
+all: CMakeFiles/drawText.dir/all
+all: CMakeFiles/freeTypeFont.dir/all
+all: CMakeFiles/keyboard.dir/all
+all: CMakeFiles/keyboard2.dir/all
 all: CMakeFiles/line.dir/all
+all: CMakeFiles/lineTest.dir/all
+all: CMakeFiles/maskSetTo.dir/all
+all: CMakeFiles/mouse.dir/all
+all: CMakeFiles/storage.dir/all
+all: CMakeFiles/storageRead.dir/all
+all: CMakeFiles/trackBar.dir/all
+all: CMakeFiles/usefulFunc.dir/all
 all: CMakeFiles/video.dir/all
 .PHONY : all
 
@@ -72,9 +85,178 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/BGR_check.dir/clean
+clean: CMakeFiles/drawPolys.dir/clean
+clean: CMakeFiles/drawText.dir/clean
+clean: CMakeFiles/freeTypeFont.dir/clean
+clean: CMakeFiles/keyboard.dir/clean
+clean: CMakeFiles/keyboard2.dir/clean
 clean: CMakeFiles/line.dir/clean
+clean: CMakeFiles/lineTest.dir/clean
+clean: CMakeFiles/maskSetTo.dir/clean
+clean: CMakeFiles/mouse.dir/clean
+clean: CMakeFiles/storage.dir/clean
+clean: CMakeFiles/storageRead.dir/clean
+clean: CMakeFiles/trackBar.dir/clean
+clean: CMakeFiles/usefulFunc.dir/clean
 clean: CMakeFiles/video.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BGR_check.dir
+
+# All Build rule for target.
+CMakeFiles/BGR_check.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=1,2 "Built target BGR_check"
+.PHONY : CMakeFiles/BGR_check.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BGR_check.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BGR_check.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/BGR_check.dir/rule
+
+# Convenience name for target.
+BGR_check: CMakeFiles/BGR_check.dir/rule
+.PHONY : BGR_check
+
+# clean rule for target.
+CMakeFiles/BGR_check.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BGR_check.dir/build.make CMakeFiles/BGR_check.dir/clean
+.PHONY : CMakeFiles/BGR_check.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/drawPolys.dir
+
+# All Build rule for target.
+CMakeFiles/drawPolys.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolys.dir/build.make CMakeFiles/drawPolys.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolys.dir/build.make CMakeFiles/drawPolys.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=3,4 "Built target drawPolys"
+.PHONY : CMakeFiles/drawPolys.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/drawPolys.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/drawPolys.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/drawPolys.dir/rule
+
+# Convenience name for target.
+drawPolys: CMakeFiles/drawPolys.dir/rule
+.PHONY : drawPolys
+
+# clean rule for target.
+CMakeFiles/drawPolys.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolys.dir/build.make CMakeFiles/drawPolys.dir/clean
+.PHONY : CMakeFiles/drawPolys.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/drawText.dir
+
+# All Build rule for target.
+CMakeFiles/drawText.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawText.dir/build.make CMakeFiles/drawText.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawText.dir/build.make CMakeFiles/drawText.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=5,6 "Built target drawText"
+.PHONY : CMakeFiles/drawText.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/drawText.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/drawText.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/drawText.dir/rule
+
+# Convenience name for target.
+drawText: CMakeFiles/drawText.dir/rule
+.PHONY : drawText
+
+# clean rule for target.
+CMakeFiles/drawText.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawText.dir/build.make CMakeFiles/drawText.dir/clean
+.PHONY : CMakeFiles/drawText.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/freeTypeFont.dir
+
+# All Build rule for target.
+CMakeFiles/freeTypeFont.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freeTypeFont.dir/build.make CMakeFiles/freeTypeFont.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freeTypeFont.dir/build.make CMakeFiles/freeTypeFont.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=7,8 "Built target freeTypeFont"
+.PHONY : CMakeFiles/freeTypeFont.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/freeTypeFont.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/freeTypeFont.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/freeTypeFont.dir/rule
+
+# Convenience name for target.
+freeTypeFont: CMakeFiles/freeTypeFont.dir/rule
+.PHONY : freeTypeFont
+
+# clean rule for target.
+CMakeFiles/freeTypeFont.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freeTypeFont.dir/build.make CMakeFiles/freeTypeFont.dir/clean
+.PHONY : CMakeFiles/freeTypeFont.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/keyboard.dir
+
+# All Build rule for target.
+CMakeFiles/keyboard.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=9,10 "Built target keyboard"
+.PHONY : CMakeFiles/keyboard.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/keyboard.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/keyboard.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/keyboard.dir/rule
+
+# Convenience name for target.
+keyboard: CMakeFiles/keyboard.dir/rule
+.PHONY : keyboard
+
+# clean rule for target.
+CMakeFiles/keyboard.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/clean
+.PHONY : CMakeFiles/keyboard.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/keyboard2.dir
+
+# All Build rule for target.
+CMakeFiles/keyboard2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=11,12 "Built target keyboard2"
+.PHONY : CMakeFiles/keyboard2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/keyboard2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/keyboard2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/keyboard2.dir/rule
+
+# Convenience name for target.
+keyboard2: CMakeFiles/keyboard2.dir/rule
+.PHONY : keyboard2
+
+# clean rule for target.
+CMakeFiles/keyboard2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/clean
+.PHONY : CMakeFiles/keyboard2.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/line.dir
@@ -83,7 +265,7 @@ clean: CMakeFiles/video.dir/clean
 CMakeFiles/line.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line.dir/build.make CMakeFiles/line.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line.dir/build.make CMakeFiles/line.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=1,2 "Built target line"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=13,14 "Built target line"
 .PHONY : CMakeFiles/line.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,13 +285,195 @@ CMakeFiles/line.dir/clean:
 .PHONY : CMakeFiles/line.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/lineTest.dir
+
+# All Build rule for target.
+CMakeFiles/lineTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=15,16 "Built target lineTest"
+.PHONY : CMakeFiles/lineTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lineTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lineTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/lineTest.dir/rule
+
+# Convenience name for target.
+lineTest: CMakeFiles/lineTest.dir/rule
+.PHONY : lineTest
+
+# clean rule for target.
+CMakeFiles/lineTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/clean
+.PHONY : CMakeFiles/lineTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/maskSetTo.dir
+
+# All Build rule for target.
+CMakeFiles/maskSetTo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskSetTo.dir/build.make CMakeFiles/maskSetTo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskSetTo.dir/build.make CMakeFiles/maskSetTo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=17,18 "Built target maskSetTo"
+.PHONY : CMakeFiles/maskSetTo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/maskSetTo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/maskSetTo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/maskSetTo.dir/rule
+
+# Convenience name for target.
+maskSetTo: CMakeFiles/maskSetTo.dir/rule
+.PHONY : maskSetTo
+
+# clean rule for target.
+CMakeFiles/maskSetTo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskSetTo.dir/build.make CMakeFiles/maskSetTo.dir/clean
+.PHONY : CMakeFiles/maskSetTo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mouse.dir
+
+# All Build rule for target.
+CMakeFiles/mouse.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=19,20 "Built target mouse"
+.PHONY : CMakeFiles/mouse.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mouse.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mouse.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/mouse.dir/rule
+
+# Convenience name for target.
+mouse: CMakeFiles/mouse.dir/rule
+.PHONY : mouse
+
+# clean rule for target.
+CMakeFiles/mouse.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/clean
+.PHONY : CMakeFiles/mouse.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/storage.dir
+
+# All Build rule for target.
+CMakeFiles/storage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=21,22 "Built target storage"
+.PHONY : CMakeFiles/storage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/storage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/storage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/storage.dir/rule
+
+# Convenience name for target.
+storage: CMakeFiles/storage.dir/rule
+.PHONY : storage
+
+# clean rule for target.
+CMakeFiles/storage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/clean
+.PHONY : CMakeFiles/storage.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/storageRead.dir
+
+# All Build rule for target.
+CMakeFiles/storageRead.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storageRead.dir/build.make CMakeFiles/storageRead.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storageRead.dir/build.make CMakeFiles/storageRead.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=23,24 "Built target storageRead"
+.PHONY : CMakeFiles/storageRead.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/storageRead.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/storageRead.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/storageRead.dir/rule
+
+# Convenience name for target.
+storageRead: CMakeFiles/storageRead.dir/rule
+.PHONY : storageRead
+
+# clean rule for target.
+CMakeFiles/storageRead.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storageRead.dir/build.make CMakeFiles/storageRead.dir/clean
+.PHONY : CMakeFiles/storageRead.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/trackBar.dir
+
+# All Build rule for target.
+CMakeFiles/trackBar.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackBar.dir/build.make CMakeFiles/trackBar.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackBar.dir/build.make CMakeFiles/trackBar.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=25,26 "Built target trackBar"
+.PHONY : CMakeFiles/trackBar.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/trackBar.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/trackBar.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/trackBar.dir/rule
+
+# Convenience name for target.
+trackBar: CMakeFiles/trackBar.dir/rule
+.PHONY : trackBar
+
+# clean rule for target.
+CMakeFiles/trackBar.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackBar.dir/build.make CMakeFiles/trackBar.dir/clean
+.PHONY : CMakeFiles/trackBar.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/usefulFunc.dir
+
+# All Build rule for target.
+CMakeFiles/usefulFunc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usefulFunc.dir/build.make CMakeFiles/usefulFunc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usefulFunc.dir/build.make CMakeFiles/usefulFunc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=27,28 "Built target usefulFunc"
+.PHONY : CMakeFiles/usefulFunc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/usefulFunc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/usefulFunc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap04/build/CMakeFiles 0
+.PHONY : CMakeFiles/usefulFunc.dir/rule
+
+# Convenience name for target.
+usefulFunc: CMakeFiles/usefulFunc.dir/rule
+.PHONY : usefulFunc
+
+# clean rule for target.
+CMakeFiles/usefulFunc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usefulFunc.dir/build.make CMakeFiles/usefulFunc.dir/clean
+.PHONY : CMakeFiles/usefulFunc.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/video.dir
 
 # All Build rule for target.
 CMakeFiles/video.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=3,4 "Built target video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap04/build/CMakeFiles --progress-num=29,30 "Built target video"
 .PHONY : CMakeFiles/video.dir/all
 
 # Build rule for subdir invocation for target.

@@ -562,3 +562,80 @@ C/C++ database arduino raspberrypi IoT
   - CMakeLists.txt 작성법
 
   - KIB/openCV/chap1~4 line.cpp까지했음
+
+
+- # 2024-05-07 화
+-----------------
+- openCV
+  - 복습
+    - 영상처리(저수준) -> 밝기, 대비 등.
+    - 영상인식(고수준) -> 영상을 해석을 해서 의미있는 정보를 뽑아내는 것.
+    - 기초클래스
+      - _Point -> x, y
+      - _Size -> width, height
+      - _Rect -> x, y, width, height
+      - _Mat -> 2차원배열 [y][x]
+      - _RotateRect
+      - _Range
+      - _String -> openCV에는 include<string>가 String 클래스에 들어가있다.
+    - 기본기능
+      - cap = VideoCapture -> cap<<[mat]
+      - drawing
+     
+    - InputArray, OutputArray
+      - 다양한 이미지 객체들을 받을 수 있음. 내부에서 처리됨.
+
+  - 수업(4장)
+    - lineTest.cpp
+      - //
+
+    - drawPolys.cpp
+      - rectangle함수, circle함수, ellipse함수 
+
+    - drawText.cpp
+      - putText함수 -> 영어만 쓸 수 있다. freeType 라이브러리의 putText를 쓰면 한글도 쓸 수 있다.
+    
+    - freeTypeFont.cpp
+      - //
+
+    - mouse.cpp
+      - waitKey함수
+        - HightGui.hpp에 선언
+        - 밀리초 단위의 시간을 대기하면서, 키의 ASCII값을 반환.
+        - 대기시간동안 반환 값이 없으면 -1 반환.
+        - 키보드의 특수 키는 입력받을 수 없음.
+      - setMouseCallback 함수
+      - struct를 만들어 전역변수들 넣어주기. 최대한 전역변수는 넣지 않는게 좋음(해킹위험), 함수의 결과를 보이드 포인터로 뺄 경우 class나 struct로 묶어서 옮겨주기(코드 참조).
+
+      - class와 struct는 메소드(함수)의 유무로 판별한다.
+
+    - keyboard.cpp
+      - //
+    - keyboard2.cpp
+      - #include <chrono>, #include <thread> 활용.
+      - //
+
+    - storage.cpp
+      - FileStorage class
+        - FileStorage class를 이용하여 XML/YAML/JSON파일을 쓰기 모드로 열어 데이터를 파일에 저장할 수 있다.
+        - 보통 << 연산자 재정의 함수를 사용한다.
+        - char, int float, double등 기본자료형과, string, vector 등 STL클래스 객체, openCV의 Mat, Scalar, Point, Size, Rect등 클래스 객체를 저장할 수 있다.
+    - storageRead.cpp
+      - storage.cpp에서 저장한 json파일 데이터를 읽어온다.
+
+    - maskSetTo.cpp, 
+      - sum(), mean() 함수
+      - minMaxLoc() 함수
+      - normalize() 함수
+      - cvRound() 함수
+
+    - mouseRGBpoint.cpp
+      - 4장 통합 예제
+      - // github보고 빠진거 채우기
+      
+  - 수업(5장)
+    - 영상의 밝기 조절: 최대값, 최소값 존재. 일반적으로 0~255
+    - brightness.cpp
+    - saturated.cpp
+
+
