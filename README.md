@@ -672,6 +672,7 @@ C/C++ database arduino raspberrypi IoT
   - 수업(6장)
     - arithmatic.cpp
       - 영상의 산술 연산
+        - add, addWeighted, subtract, absdiff
     
     - logical.cpp
       - 영상의 논리 연산
@@ -691,3 +692,43 @@ C/C++ database arduino raspberrypi IoT
 
     - sharpen.cpp
       - 언샤프 마스크 필터를 이용한 샤프닝.
+
+    - noise.cpp
+
+    - bilateralFilter.cpp
+      - 양방향 필터
+        - 가우시안 블러를 쓰면 잡음이 제거된다. 하지만 엣지가 무뎌지는 단점이 있음.
+
+    - medianFilter.cpp
+
+  - 수업(8장)
+    - affine.cpp
+      - 어파인 변환(affine transformation)
+    - affineTraslation.cpp
+    - affineShear.cpp
+    - affineRotation.cpp
+    - flip.cpp
+
+    - 투시변환 -> 점 4개를 옮기며 자유롭게 바꿀 수 있는 방법.
+
+    - perspectiveTransform.cpp //보충필요!!!!!!!!!!
+    //
+    //
+    //
+
+    
+    - edge 얻어내기 -> line 얻어내기 -> corner 포인트 얻어내기 -> keypoint 얻어내기
+
+
+  - 수업(9장)
+  //
+  //
+  //
+    - 케니 에지 검출 4단계
+      - 1. 가우시안 필터링(잡음 제거)
+      - 2. 그래디언트 계산: 크기와 방향을 계산
+      - 3. 비최대 억제(non maximum suppression)
+      - 4. 히스테리시스 에지 트래킹: 두 개의 임계값을 사용
+
+    - canny.cpp
+
