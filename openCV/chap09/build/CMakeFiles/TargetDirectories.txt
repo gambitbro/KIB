@@ -1,0 +1,3 @@
+/home/qq43/KIB/openCV/chap09/build/CMakeFiles/canny.dir
+/home/qq43/KIB/openCV/chap09/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap09/build/CMakeFiles/rebuild_cache.dir

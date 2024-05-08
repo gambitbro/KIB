@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named bilateralFilter
+
+# Build rule for target.
+bilateralFilter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bilateralFilter
+.PHONY : bilateralFilter
+
+# fast build rule for target.
+bilateralFilter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bilateralFilter.dir/build.make CMakeFiles/bilateralFilter.dir/build
+.PHONY : bilateralFilter/fast
+
+#=============================================================================
 # Target rules for targets named blur
 
 # Build rule for target.
@@ -156,6 +169,32 @@ gaussianBlur/fast:
 .PHONY : gaussianBlur/fast
 
 #=============================================================================
+# Target rules for targets named medianFilter
+
+# Build rule for target.
+medianFilter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 medianFilter
+.PHONY : medianFilter
+
+# fast build rule for target.
+medianFilter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/medianFilter.dir/build.make CMakeFiles/medianFilter.dir/build
+.PHONY : medianFilter/fast
+
+#=============================================================================
+# Target rules for targets named noise
+
+# Build rule for target.
+noise: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 noise
+.PHONY : noise
+
+# fast build rule for target.
+noise/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noise.dir/build.make CMakeFiles/noise.dir/build
+.PHONY : noise/fast
+
+#=============================================================================
 # Target rules for targets named sharpen
 
 # Build rule for target.
@@ -167,6 +206,30 @@ sharpen: cmake_check_build_system
 sharpen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharpen.dir/build.make CMakeFiles/sharpen.dir/build
 .PHONY : sharpen/fast
+
+bilateralFilter.o: bilateralFilter.cpp.o
+.PHONY : bilateralFilter.o
+
+# target to build an object file
+bilateralFilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bilateralFilter.dir/build.make CMakeFiles/bilateralFilter.dir/bilateralFilter.cpp.o
+.PHONY : bilateralFilter.cpp.o
+
+bilateralFilter.i: bilateralFilter.cpp.i
+.PHONY : bilateralFilter.i
+
+# target to preprocess a source file
+bilateralFilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bilateralFilter.dir/build.make CMakeFiles/bilateralFilter.dir/bilateralFilter.cpp.i
+.PHONY : bilateralFilter.cpp.i
+
+bilateralFilter.s: bilateralFilter.cpp.s
+.PHONY : bilateralFilter.s
+
+# target to generate assembly for a file
+bilateralFilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bilateralFilter.dir/build.make CMakeFiles/bilateralFilter.dir/bilateralFilter.cpp.s
+.PHONY : bilateralFilter.cpp.s
 
 blur.o: blur.cpp.o
 .PHONY : blur.o
@@ -240,6 +303,54 @@ gaussianBlur.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussianBlur.dir/build.make CMakeFiles/gaussianBlur.dir/gaussianBlur.cpp.s
 .PHONY : gaussianBlur.cpp.s
 
+medianFilter.o: medianFilter.cpp.o
+.PHONY : medianFilter.o
+
+# target to build an object file
+medianFilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/medianFilter.dir/build.make CMakeFiles/medianFilter.dir/medianFilter.cpp.o
+.PHONY : medianFilter.cpp.o
+
+medianFilter.i: medianFilter.cpp.i
+.PHONY : medianFilter.i
+
+# target to preprocess a source file
+medianFilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/medianFilter.dir/build.make CMakeFiles/medianFilter.dir/medianFilter.cpp.i
+.PHONY : medianFilter.cpp.i
+
+medianFilter.s: medianFilter.cpp.s
+.PHONY : medianFilter.s
+
+# target to generate assembly for a file
+medianFilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/medianFilter.dir/build.make CMakeFiles/medianFilter.dir/medianFilter.cpp.s
+.PHONY : medianFilter.cpp.s
+
+noise.o: noise.cpp.o
+.PHONY : noise.o
+
+# target to build an object file
+noise.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noise.dir/build.make CMakeFiles/noise.dir/noise.cpp.o
+.PHONY : noise.cpp.o
+
+noise.i: noise.cpp.i
+.PHONY : noise.i
+
+# target to preprocess a source file
+noise.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noise.dir/build.make CMakeFiles/noise.dir/noise.cpp.i
+.PHONY : noise.cpp.i
+
+noise.s: noise.cpp.s
+.PHONY : noise.s
+
+# target to generate assembly for a file
+noise.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noise.dir/build.make CMakeFiles/noise.dir/noise.cpp.s
+.PHONY : noise.cpp.s
+
 sharpen.o: sharpen.cpp.o
 .PHONY : sharpen.o
 
@@ -272,10 +383,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... bilateralFilter"
 	@echo "... blur"
 	@echo "... filterEmbossing"
 	@echo "... gaussianBlur"
+	@echo "... medianFilter"
+	@echo "... noise"
 	@echo "... sharpen"
+	@echo "... bilateralFilter.o"
+	@echo "... bilateralFilter.i"
+	@echo "... bilateralFilter.s"
 	@echo "... blur.o"
 	@echo "... blur.i"
 	@echo "... blur.s"
@@ -285,6 +402,12 @@ help:
 	@echo "... gaussianBlur.o"
 	@echo "... gaussianBlur.i"
 	@echo "... gaussianBlur.s"
+	@echo "... medianFilter.o"
+	@echo "... medianFilter.i"
+	@echo "... medianFilter.s"
+	@echo "... noise.o"
+	@echo "... noise.i"
+	@echo "... noise.s"
 	@echo "... sharpen.o"
 	@echo "... sharpen.i"
 	@echo "... sharpen.s"

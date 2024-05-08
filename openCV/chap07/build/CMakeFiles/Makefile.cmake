@@ -49,8 +49,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/bilateralFilter.dir/DependInfo.cmake"
   "CMakeFiles/blur.dir/DependInfo.cmake"
   "CMakeFiles/filterEmbossing.dir/DependInfo.cmake"
   "CMakeFiles/gaussianBlur.dir/DependInfo.cmake"
+  "CMakeFiles/medianFilter.dir/DependInfo.cmake"
+  "CMakeFiles/noise.dir/DependInfo.cmake"
   "CMakeFiles/sharpen.dir/DependInfo.cmake"
   )

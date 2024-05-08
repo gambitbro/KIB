@@ -1,0 +1,7 @@
+/home/qq43/KIB/openCV/chap08/build/CMakeFiles/affine.dir
+/home/qq43/KIB/openCV/chap08/build/CMakeFiles/affineRotation.dir
+/home/qq43/KIB/openCV/chap08/build/CMakeFiles/affineShear.dir
+/home/qq43/KIB/openCV/chap08/build/CMakeFiles/affineTranslation.dir
+/home/qq43/KIB/openCV/chap08/build/CMakeFiles/flip.dir
+/home/qq43/KIB/openCV/chap08/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap08/build/CMakeFiles/rebuild_cache.dir
