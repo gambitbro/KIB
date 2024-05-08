@@ -639,3 +639,55 @@ C/C++ database arduino raspberrypi IoT
     - saturated.cpp
 
 
+- # 2024-05-08 수
+-----------------
+
+- openCV
+  - 복습
+    - drawing -> 사각형(rotated Rect), 원, 타원(호)
+    - keyboard, mouse
+      - keyboard: waitKey() 사용.
+      - mouse: event가 일어날 때, eventCallBack() 사용.
+    - fileStorage
+
+    - 밝기 -> add(), substract(), saturated_cast(데이터 손실을 방지하는 기술중 하나)
+
+  - 수업(5장)
+    - brightTrackbar.cpp
+      - 트랙바 만들어서 사진 밝기 조절하기.
+      - on_brightness() 살펴보기.
+
+    - contrast.cpp
+      - 효과적인 명암비 조절 예제.
+
+    - 히스토그램 분석 histogram.cpp
+      - calcHist() 사용, 히스토그램 그래프 만들기.
+
+    - histogramStretch.cpp
+      - 히스토그램이 집중된 구간을 전 구간에 걸쳐서 나타나도록 만들기.
+
+    - histogramEqualization.cpp
+      - 히스토그램 평활화(histogram equalization)
+
+  - 수업(6장)
+    - arithmatic.cpp
+      - 영상의 산술 연산
+    
+    - logical.cpp
+      - 영상의 논리 연산
+
+  - 수업(7장)
+    - 필터링 연산
+      - mask연산을 하려면 예를들어 1200픽셀의 영상을 3x3mask로 연산할경우, 1200*9만큼의 픽셀이 필요하다. 픽셀 9개가 1개가 됨.
+
+    - filterEmbossing.cpp
+      - filter2D() 함수 -> 필터링 연산의 가장 기본이 되는 함수.
+    
+    - blur.cpp
+      - 블러처리
+
+    - gaussianBlur.cpp
+      - 가우시안 함수 GaussianBlur()
+
+    - sharpen.cpp
+      - 언샤프 마스크 필터를 이용한 샤프닝.

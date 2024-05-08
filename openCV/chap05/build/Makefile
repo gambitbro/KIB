@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named brightTrackbar
+
+# Build rule for target.
+brightTrackbar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 brightTrackbar
+.PHONY : brightTrackbar
+
+# fast build rule for target.
+brightTrackbar/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightTrackbar.dir/build.make CMakeFiles/brightTrackbar.dir/build
+.PHONY : brightTrackbar/fast
+
+#=============================================================================
 # Target rules for targets named brightness
 
 # Build rule for target.
@@ -130,6 +143,58 @@ brightness/fast:
 .PHONY : brightness/fast
 
 #=============================================================================
+# Target rules for targets named contrast
+
+# Build rule for target.
+contrast: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 contrast
+.PHONY : contrast
+
+# fast build rule for target.
+contrast/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/build
+.PHONY : contrast/fast
+
+#=============================================================================
+# Target rules for targets named histogram
+
+# Build rule for target.
+histogram: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 histogram
+.PHONY : histogram
+
+# fast build rule for target.
+histogram/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/build
+.PHONY : histogram/fast
+
+#=============================================================================
+# Target rules for targets named histogramEqualization
+
+# Build rule for target.
+histogramEqualization: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 histogramEqualization
+.PHONY : histogramEqualization
+
+# fast build rule for target.
+histogramEqualization/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqualization.dir/build.make CMakeFiles/histogramEqualization.dir/build
+.PHONY : histogramEqualization/fast
+
+#=============================================================================
+# Target rules for targets named histogramStretch
+
+# Build rule for target.
+histogramStretch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 histogramStretch
+.PHONY : histogramStretch
+
+# fast build rule for target.
+histogramStretch/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramStretch.dir/build.make CMakeFiles/histogramStretch.dir/build
+.PHONY : histogramStretch/fast
+
+#=============================================================================
 # Target rules for targets named saturated
 
 # Build rule for target.
@@ -141,6 +206,30 @@ saturated: cmake_check_build_system
 saturated/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saturated.dir/build.make CMakeFiles/saturated.dir/build
 .PHONY : saturated/fast
+
+brightTrackbar.o: brightTrackbar.cpp.o
+.PHONY : brightTrackbar.o
+
+# target to build an object file
+brightTrackbar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightTrackbar.dir/build.make CMakeFiles/brightTrackbar.dir/brightTrackbar.cpp.o
+.PHONY : brightTrackbar.cpp.o
+
+brightTrackbar.i: brightTrackbar.cpp.i
+.PHONY : brightTrackbar.i
+
+# target to preprocess a source file
+brightTrackbar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightTrackbar.dir/build.make CMakeFiles/brightTrackbar.dir/brightTrackbar.cpp.i
+.PHONY : brightTrackbar.cpp.i
+
+brightTrackbar.s: brightTrackbar.cpp.s
+.PHONY : brightTrackbar.s
+
+# target to generate assembly for a file
+brightTrackbar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightTrackbar.dir/build.make CMakeFiles/brightTrackbar.dir/brightTrackbar.cpp.s
+.PHONY : brightTrackbar.cpp.s
 
 brightness.o: brightness.cpp.o
 .PHONY : brightness.o
@@ -165,6 +254,102 @@ brightness.s: brightness.cpp.s
 brightness.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/brightness.cpp.s
 .PHONY : brightness.cpp.s
+
+contrast.o: contrast.cpp.o
+.PHONY : contrast.o
+
+# target to build an object file
+contrast.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/contrast.cpp.o
+.PHONY : contrast.cpp.o
+
+contrast.i: contrast.cpp.i
+.PHONY : contrast.i
+
+# target to preprocess a source file
+contrast.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/contrast.cpp.i
+.PHONY : contrast.cpp.i
+
+contrast.s: contrast.cpp.s
+.PHONY : contrast.s
+
+# target to generate assembly for a file
+contrast.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/contrast.cpp.s
+.PHONY : contrast.cpp.s
+
+histogram.o: histogram.cpp.o
+.PHONY : histogram.o
+
+# target to build an object file
+histogram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/histogram.cpp.o
+.PHONY : histogram.cpp.o
+
+histogram.i: histogram.cpp.i
+.PHONY : histogram.i
+
+# target to preprocess a source file
+histogram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/histogram.cpp.i
+.PHONY : histogram.cpp.i
+
+histogram.s: histogram.cpp.s
+.PHONY : histogram.s
+
+# target to generate assembly for a file
+histogram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/histogram.cpp.s
+.PHONY : histogram.cpp.s
+
+histogramEqualization.o: histogramEqualization.cpp.o
+.PHONY : histogramEqualization.o
+
+# target to build an object file
+histogramEqualization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqualization.dir/build.make CMakeFiles/histogramEqualization.dir/histogramEqualization.cpp.o
+.PHONY : histogramEqualization.cpp.o
+
+histogramEqualization.i: histogramEqualization.cpp.i
+.PHONY : histogramEqualization.i
+
+# target to preprocess a source file
+histogramEqualization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqualization.dir/build.make CMakeFiles/histogramEqualization.dir/histogramEqualization.cpp.i
+.PHONY : histogramEqualization.cpp.i
+
+histogramEqualization.s: histogramEqualization.cpp.s
+.PHONY : histogramEqualization.s
+
+# target to generate assembly for a file
+histogramEqualization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqualization.dir/build.make CMakeFiles/histogramEqualization.dir/histogramEqualization.cpp.s
+.PHONY : histogramEqualization.cpp.s
+
+histogramStretch.o: histogramStretch.cpp.o
+.PHONY : histogramStretch.o
+
+# target to build an object file
+histogramStretch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramStretch.dir/build.make CMakeFiles/histogramStretch.dir/histogramStretch.cpp.o
+.PHONY : histogramStretch.cpp.o
+
+histogramStretch.i: histogramStretch.cpp.i
+.PHONY : histogramStretch.i
+
+# target to preprocess a source file
+histogramStretch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramStretch.dir/build.make CMakeFiles/histogramStretch.dir/histogramStretch.cpp.i
+.PHONY : histogramStretch.cpp.i
+
+histogramStretch.s: histogramStretch.cpp.s
+.PHONY : histogramStretch.s
+
+# target to generate assembly for a file
+histogramStretch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramStretch.dir/build.make CMakeFiles/histogramStretch.dir/histogramStretch.cpp.s
+.PHONY : histogramStretch.cpp.s
 
 saturated.o: saturated.cpp.o
 .PHONY : saturated.o
@@ -198,11 +383,31 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... brightTrackbar"
 	@echo "... brightness"
+	@echo "... contrast"
+	@echo "... histogram"
+	@echo "... histogramEqualization"
+	@echo "... histogramStretch"
 	@echo "... saturated"
+	@echo "... brightTrackbar.o"
+	@echo "... brightTrackbar.i"
+	@echo "... brightTrackbar.s"
 	@echo "... brightness.o"
 	@echo "... brightness.i"
 	@echo "... brightness.s"
+	@echo "... contrast.o"
+	@echo "... contrast.i"
+	@echo "... contrast.s"
+	@echo "... histogram.o"
+	@echo "... histogram.i"
+	@echo "... histogram.s"
+	@echo "... histogramEqualization.o"
+	@echo "... histogramEqualization.i"
+	@echo "... histogramEqualization.s"
+	@echo "... histogramStretch.o"
+	@echo "... histogramStretch.i"
+	@echo "... histogramStretch.s"
 	@echo "... saturated.o"
 	@echo "... saturated.i"
 	@echo "... saturated.s"

@@ -1,0 +1,4 @@
+/home/qq43/KIB/openCV/chap06/build/CMakeFiles/arithmatic.dir
+/home/qq43/KIB/openCV/chap06/build/CMakeFiles/logical.dir
+/home/qq43/KIB/openCV/chap06/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap06/build/CMakeFiles/rebuild_cache.dir

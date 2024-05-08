@@ -49,6 +49,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/brightTrackbar.dir/DependInfo.cmake"
   "CMakeFiles/brightness.dir/DependInfo.cmake"
+  "CMakeFiles/contrast.dir/DependInfo.cmake"
+  "CMakeFiles/histogram.dir/DependInfo.cmake"
+  "CMakeFiles/histogramEqualization.dir/DependInfo.cmake"
+  "CMakeFiles/histogramStretch.dir/DependInfo.cmake"
   "CMakeFiles/saturated.dir/DependInfo.cmake"
   )

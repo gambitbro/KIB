@@ -63,7 +63,12 @@ CMAKE_BINARY_DIR = /home/qq43/KIB/openCV/chap05/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/brightTrackbar.dir/all
 all: CMakeFiles/brightness.dir/all
+all: CMakeFiles/contrast.dir/all
+all: CMakeFiles/histogram.dir/all
+all: CMakeFiles/histogramEqualization.dir/all
+all: CMakeFiles/histogramStretch.dir/all
 all: CMakeFiles/saturated.dir/all
 .PHONY : all
 
@@ -72,9 +77,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/brightTrackbar.dir/clean
 clean: CMakeFiles/brightness.dir/clean
+clean: CMakeFiles/contrast.dir/clean
+clean: CMakeFiles/histogram.dir/clean
+clean: CMakeFiles/histogramEqualization.dir/clean
+clean: CMakeFiles/histogramStretch.dir/clean
 clean: CMakeFiles/saturated.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/brightTrackbar.dir
+
+# All Build rule for target.
+CMakeFiles/brightTrackbar.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightTrackbar.dir/build.make CMakeFiles/brightTrackbar.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightTrackbar.dir/build.make CMakeFiles/brightTrackbar.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=1,2 "Built target brightTrackbar"
+.PHONY : CMakeFiles/brightTrackbar.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/brightTrackbar.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/brightTrackbar.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/brightTrackbar.dir/rule
+
+# Convenience name for target.
+brightTrackbar: CMakeFiles/brightTrackbar.dir/rule
+.PHONY : brightTrackbar
+
+# clean rule for target.
+CMakeFiles/brightTrackbar.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightTrackbar.dir/build.make CMakeFiles/brightTrackbar.dir/clean
+.PHONY : CMakeFiles/brightTrackbar.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/brightness.dir
@@ -83,7 +119,7 @@ clean: CMakeFiles/saturated.dir/clean
 CMakeFiles/brightness.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=1,2 "Built target brightness"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=3,4 "Built target brightness"
 .PHONY : CMakeFiles/brightness.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,13 +139,117 @@ CMakeFiles/brightness.dir/clean:
 .PHONY : CMakeFiles/brightness.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/contrast.dir
+
+# All Build rule for target.
+CMakeFiles/contrast.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=5,6 "Built target contrast"
+.PHONY : CMakeFiles/contrast.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/contrast.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/contrast.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/contrast.dir/rule
+
+# Convenience name for target.
+contrast: CMakeFiles/contrast.dir/rule
+.PHONY : contrast
+
+# clean rule for target.
+CMakeFiles/contrast.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/clean
+.PHONY : CMakeFiles/contrast.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/histogram.dir
+
+# All Build rule for target.
+CMakeFiles/histogram.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=7,8 "Built target histogram"
+.PHONY : CMakeFiles/histogram.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/histogram.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/histogram.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/histogram.dir/rule
+
+# Convenience name for target.
+histogram: CMakeFiles/histogram.dir/rule
+.PHONY : histogram
+
+# clean rule for target.
+CMakeFiles/histogram.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/clean
+.PHONY : CMakeFiles/histogram.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/histogramEqualization.dir
+
+# All Build rule for target.
+CMakeFiles/histogramEqualization.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqualization.dir/build.make CMakeFiles/histogramEqualization.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqualization.dir/build.make CMakeFiles/histogramEqualization.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=9,10 "Built target histogramEqualization"
+.PHONY : CMakeFiles/histogramEqualization.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/histogramEqualization.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/histogramEqualization.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/histogramEqualization.dir/rule
+
+# Convenience name for target.
+histogramEqualization: CMakeFiles/histogramEqualization.dir/rule
+.PHONY : histogramEqualization
+
+# clean rule for target.
+CMakeFiles/histogramEqualization.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqualization.dir/build.make CMakeFiles/histogramEqualization.dir/clean
+.PHONY : CMakeFiles/histogramEqualization.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/histogramStretch.dir
+
+# All Build rule for target.
+CMakeFiles/histogramStretch.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramStretch.dir/build.make CMakeFiles/histogramStretch.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramStretch.dir/build.make CMakeFiles/histogramStretch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=11,12 "Built target histogramStretch"
+.PHONY : CMakeFiles/histogramStretch.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/histogramStretch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/histogramStretch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq43/KIB/openCV/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/histogramStretch.dir/rule
+
+# Convenience name for target.
+histogramStretch: CMakeFiles/histogramStretch.dir/rule
+.PHONY : histogramStretch
+
+# clean rule for target.
+CMakeFiles/histogramStretch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramStretch.dir/build.make CMakeFiles/histogramStretch.dir/clean
+.PHONY : CMakeFiles/histogramStretch.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/saturated.dir
 
 # All Build rule for target.
 CMakeFiles/saturated.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saturated.dir/build.make CMakeFiles/saturated.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saturated.dir/build.make CMakeFiles/saturated.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=3,4 "Built target saturated"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq43/KIB/openCV/chap05/build/CMakeFiles --progress-num=13,14 "Built target saturated"
 .PHONY : CMakeFiles/saturated.dir/all
 
 # Build rule for subdir invocation for target.

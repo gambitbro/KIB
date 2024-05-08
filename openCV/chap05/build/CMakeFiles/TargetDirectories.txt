@@ -1,4 +1,9 @@
+/home/qq43/KIB/openCV/chap05/build/CMakeFiles/brightTrackbar.dir
 /home/qq43/KIB/openCV/chap05/build/CMakeFiles/brightness.dir
+/home/qq43/KIB/openCV/chap05/build/CMakeFiles/contrast.dir
+/home/qq43/KIB/openCV/chap05/build/CMakeFiles/histogram.dir
+/home/qq43/KIB/openCV/chap05/build/CMakeFiles/histogramEqualization.dir
+/home/qq43/KIB/openCV/chap05/build/CMakeFiles/histogramStretch.dir
 /home/qq43/KIB/openCV/chap05/build/CMakeFiles/saturated.dir
 /home/qq43/KIB/openCV/chap05/build/CMakeFiles/edit_cache.dir
 /home/qq43/KIB/openCV/chap05/build/CMakeFiles/rebuild_cache.dir
