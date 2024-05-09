@@ -678,7 +678,7 @@ C/C++ database arduino raspberrypi IoT
       - 영상의 논리 연산
 
   - 수업(7장)
-    - 필터링 연산
+    - 필터링 연산 convolution
       - mask연산을 하려면 예를들어 1200픽셀의 영상을 3x3mask로 연산할경우, 1200*9만큼의 픽셀이 필요하다. 픽셀 9개가 1개가 됨.
 
     - filterEmbossing.cpp
@@ -700,8 +700,9 @@ C/C++ database arduino raspberrypi IoT
         - 가우시안 블러를 쓰면 잡음이 제거된다. 하지만 엣지가 무뎌지는 단점이 있음.
 
     - medianFilter.cpp
+      - 백색노이즈(salt and pepper noise)를 줄이기위해 쓴다.
 
-  - 수업(8장)
+  - 수업(8장) 기하학 변환
     - affine.cpp
       - 어파인 변환(affine transformation)
     - affineTraslation.cpp
@@ -710,6 +711,7 @@ C/C++ database arduino raspberrypi IoT
     - flip.cpp
 
     - 투시변환 -> 점 4개를 옮기며 자유롭게 바꿀 수 있는 방법.
+      - affine행렬은 2x3행렬이지만, 투시변환은 3x3행렬이다.
 
     - perspectiveTransform.cpp //보충필요!!!!!!!!!!
     //
@@ -717,10 +719,12 @@ C/C++ database arduino raspberrypi IoT
     //
 
     
-    - edge 얻어내기 -> line 얻어내기 -> corner 포인트 얻어내기 -> keypoint 얻어내기
+    
 
 
   - 수업(9장)
+    - 픽셀 변화가 큰 부분을 edge라고한다.
+    - edge 얻어내기 -> line 얻어내기 -> corner 포인트 얻어내기 -> keypoint 얻어내기
   //
   //
   //
@@ -732,3 +736,69 @@ C/C++ database arduino raspberrypi IoT
 
     - canny.cpp
 
+
+- # 2024-05-09 목
+-----------------
+  - openCV
+
+    - 수업(9장)
+      - 직선 검출과 원 검출
+      - hough.cpp
+      - houghLinesP.cpp
+      - houghCircle.cpp
+      - houghCircleTrackbar.cpp
+
+    - 수업(10장)
+      - color.cpp
+      - splitMerge.cpp
+      - colorInrange.cpp
+
+    - 수업(11장)
+      - 이진화(binarization)와 모폴로지
+        
+        - 이진화 
+          - 영상을 이진화하면 속도가 더 빨라지기도 한다. 그레이스케일로 처리하는 것보다 이진화하는게 정확성도 더 높다.
+          - 이진화를 할때 웬만하면 적응형 이진화를 많이 쓴다.
+
+          - threshold.cpp
+          - adaptiveThreshold.cpp
+
+        - 모폴로지
+          - 이진화가 된 영상으로 모폴로지를 함.
+          - 이진 영상의 침식(erosion)연산 -> 깎아내기
+          - 이진 영상의 팽창(dilation)연산
+          - 열기 -> 침식 적용후 팽창 적용
+          - 닫기 -> 팽창을 적용하고 침식을 적용
+
+          - erodeDilate.cpp
+          - mophologyEX.cpp
+
+    - 수업(12장)
+      - 레이블링과 외곽선 검출
+        - 레이블링(labeling)
+          - 객체 구역을 영역 단위로 분석.
+          - 객체 픽셀에 고유한 번호를 지정하는 작업이다.
+        - 외곽선 검출
+          - contour.cpp
+          - contour_hier.cpp
+        
+        - 외곽선 처리 함수
+
+    - 수업(13장)
+      - 객체 검출
+        - 템플릿 매칭
+          - template.cpp
+        
+        - HOG 알고리즘
+          - hog.cpp   //사람인식 및 사각형으로 detect
+
+    - 수업(14장)
+      - 지역 특징점 검출과 매칭
+        - 해리스 코너 검출 -> 잘 안씀.
+        - FAST 코너 검출
+        - GFTT 코너 검출 -> 해리스 코너 검출을 업그레이드 한 검출.
+
+        - 크기 불변 특징점 알고리즘
+          - 영상을 여러번 축소한 뒤, 특징점을 검출 -> 비교 후, 확실한 특징점들을 특징점으로 확정한다.
+
+          - keypointMatching.cpp

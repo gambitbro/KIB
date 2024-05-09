@@ -1,0 +1,4 @@
+/home/qq43/KIB/openCV/chap13/build/CMakeFiles/hog.dir
+/home/qq43/KIB/openCV/chap13/build/CMakeFiles/template.dir
+/home/qq43/KIB/openCV/chap13/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap13/build/CMakeFiles/rebuild_cache.dir

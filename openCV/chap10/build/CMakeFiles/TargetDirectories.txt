@@ -1,0 +1,5 @@
+/home/qq43/KIB/openCV/chap10/build/CMakeFiles/color.dir
+/home/qq43/KIB/openCV/chap10/build/CMakeFiles/colorInrange.dir
+/home/qq43/KIB/openCV/chap10/build/CMakeFiles/splitMerge.dir
+/home/qq43/KIB/openCV/chap10/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap10/build/CMakeFiles/rebuild_cache.dir

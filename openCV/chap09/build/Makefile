@@ -129,6 +129,45 @@ canny/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
 .PHONY : canny/fast
 
+#=============================================================================
+# Target rules for targets named hough
+
+# Build rule for target.
+hough: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hough
+.PHONY : hough
+
+# fast build rule for target.
+hough/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough.dir/build.make CMakeFiles/hough.dir/build
+.PHONY : hough/fast
+
+#=============================================================================
+# Target rules for targets named houghCircle
+
+# Build rule for target.
+houghCircle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 houghCircle
+.PHONY : houghCircle
+
+# fast build rule for target.
+houghCircle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghCircle.dir/build.make CMakeFiles/houghCircle.dir/build
+.PHONY : houghCircle/fast
+
+#=============================================================================
+# Target rules for targets named houghLinesP
+
+# Build rule for target.
+houghLinesP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 houghLinesP
+.PHONY : houghLinesP
+
+# fast build rule for target.
+houghLinesP/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghLinesP.dir/build.make CMakeFiles/houghLinesP.dir/build
+.PHONY : houghLinesP/fast
+
 canny.o: canny.cpp.o
 .PHONY : canny.o
 
@@ -153,6 +192,78 @@ canny.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/canny.cpp.s
 .PHONY : canny.cpp.s
 
+hough.o: hough.cpp.o
+.PHONY : hough.o
+
+# target to build an object file
+hough.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough.dir/build.make CMakeFiles/hough.dir/hough.cpp.o
+.PHONY : hough.cpp.o
+
+hough.i: hough.cpp.i
+.PHONY : hough.i
+
+# target to preprocess a source file
+hough.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough.dir/build.make CMakeFiles/hough.dir/hough.cpp.i
+.PHONY : hough.cpp.i
+
+hough.s: hough.cpp.s
+.PHONY : hough.s
+
+# target to generate assembly for a file
+hough.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough.dir/build.make CMakeFiles/hough.dir/hough.cpp.s
+.PHONY : hough.cpp.s
+
+houghCircle.o: houghCircle.cpp.o
+.PHONY : houghCircle.o
+
+# target to build an object file
+houghCircle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghCircle.dir/build.make CMakeFiles/houghCircle.dir/houghCircle.cpp.o
+.PHONY : houghCircle.cpp.o
+
+houghCircle.i: houghCircle.cpp.i
+.PHONY : houghCircle.i
+
+# target to preprocess a source file
+houghCircle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghCircle.dir/build.make CMakeFiles/houghCircle.dir/houghCircle.cpp.i
+.PHONY : houghCircle.cpp.i
+
+houghCircle.s: houghCircle.cpp.s
+.PHONY : houghCircle.s
+
+# target to generate assembly for a file
+houghCircle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghCircle.dir/build.make CMakeFiles/houghCircle.dir/houghCircle.cpp.s
+.PHONY : houghCircle.cpp.s
+
+houghLinesP.o: houghLinesP.cpp.o
+.PHONY : houghLinesP.o
+
+# target to build an object file
+houghLinesP.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghLinesP.dir/build.make CMakeFiles/houghLinesP.dir/houghLinesP.cpp.o
+.PHONY : houghLinesP.cpp.o
+
+houghLinesP.i: houghLinesP.cpp.i
+.PHONY : houghLinesP.i
+
+# target to preprocess a source file
+houghLinesP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghLinesP.dir/build.make CMakeFiles/houghLinesP.dir/houghLinesP.cpp.i
+.PHONY : houghLinesP.cpp.i
+
+houghLinesP.s: houghLinesP.cpp.s
+.PHONY : houghLinesP.s
+
+# target to generate assembly for a file
+houghLinesP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/houghLinesP.dir/build.make CMakeFiles/houghLinesP.dir/houghLinesP.cpp.s
+.PHONY : houghLinesP.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +273,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... canny"
+	@echo "... hough"
+	@echo "... houghCircle"
+	@echo "... houghLinesP"
 	@echo "... canny.o"
 	@echo "... canny.i"
 	@echo "... canny.s"
+	@echo "... hough.o"
+	@echo "... hough.i"
+	@echo "... hough.s"
+	@echo "... houghCircle.o"
+	@echo "... houghCircle.i"
+	@echo "... houghCircle.s"
+	@echo "... houghLinesP.o"
+	@echo "... houghLinesP.i"
+	@echo "... houghLinesP.s"
 .PHONY : help
 
 

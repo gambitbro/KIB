@@ -1,0 +1,6 @@
+/home/qq43/KIB/openCV/chap12/build/CMakeFiles/contour.dir
+/home/qq43/KIB/openCV/chap12/build/CMakeFiles/contours_hier.dir
+/home/qq43/KIB/openCV/chap12/build/CMakeFiles/labeling.dir
+/home/qq43/KIB/openCV/chap12/build/CMakeFiles/labelingStat.dir
+/home/qq43/KIB/openCV/chap12/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap12/build/CMakeFiles/rebuild_cache.dir

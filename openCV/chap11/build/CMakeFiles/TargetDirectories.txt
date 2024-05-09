@@ -1,0 +1,6 @@
+/home/qq43/KIB/openCV/chap11/build/CMakeFiles/adaptiveThreshold.dir
+/home/qq43/KIB/openCV/chap11/build/CMakeFiles/erodeDilate.dir
+/home/qq43/KIB/openCV/chap11/build/CMakeFiles/mophologyEX.dir
+/home/qq43/KIB/openCV/chap11/build/CMakeFiles/threshold.dir
+/home/qq43/KIB/openCV/chap11/build/CMakeFiles/edit_cache.dir
+/home/qq43/KIB/openCV/chap11/build/CMakeFiles/rebuild_cache.dir
