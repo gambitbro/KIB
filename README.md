@@ -802,3 +802,62 @@ C/C++ database arduino raspberrypi IoT
           - 영상을 여러번 축소한 뒤, 특징점을 검출 -> 비교 후, 확실한 특징점들을특징점으로 확정한다.
 
           - keypointMatching.cpp
+
+
+//2차 프로젝트
+
+
+
+
+
+
+- # 2024-05-21 화
+-----------------
+
+  - Python 파이썬
+    - 동적 타이핑 언어 -> 프로그램의 실행 시점에서 변수의 타입이 결정됨
+    - 변수를 좀 유연하게 쓸 수 있다.
+    - 파이썬에서 외부 라이브러리를 불러오는 키워드 import
+    - 일반적인 파이썬 패키지 위치
+      - /usr/lib/pythonX.Y/dist-packages
+      - ex) usr/lib/python2.7/dist-packages
+    - 라이브러리 위치 확인하는 방법
+      - pip show [packageName]
+    
+
+    - Python 가상환경 설치 -> Virtualenv 설치
+      - sudo apt install python3-virtualenv
+      - virtualenv myenv 가상환경을 위한 폴더 생성
+      - 가상환경 해제는 deactivate
+
+    - Python 가상환경 설치 -> miniconda 실습 (주로 이걸 씀)
+      - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+      - sh Miniconda3-latest-Linux-x86_64.sh
+      - cd miniconda/bin
+      - ./conda config --set auto_activate_base false
+      - ./conda init
+
+    - pip freeze //라이브러리 리스트 확인
+    - pip install -r requirements.txt
+
+    - conda create -n my_project python=3.10  //conda 가상환경 my_project라는 이름으로 생성
+    - conda activate my_project   //가상환경 실행
+
+    - veriable.py
+    - operator.py   //python에서 쓰는 연산자의 차이점 설명
+    - input.py
+    - celsius.py
+
+    - 리스트 list()
+      - vector보다 유연성이 더 높다.
+      - list.py
+    
+      - python도 gc(garbage collector)가 메모리 관리를 한다. 사용안하는 메모리를 주기적으로 제거해준다. 그래서 del을 잘 쓰지않는다.
+      - del 은 객체삭제, remove는 리스트 안에있는 원소를 삭제
+      - 리스트 안에 리스트를 넣었을경우, 주소값이 들어가기 때문에, 원본이 바뀌면 같이 바뀐다.
+      - packing.py    //packing으로 리턴값을 묶어서 내보내기 같은거 많이 쓴다고함
+      - list2.py
+    
+    - 조건문
+      - condition.py    //조건문 예시
+      
