@@ -895,9 +895,6 @@ C/C++ database arduino raspberrypi IoT
     - 조건문
       - if, elif, else
       - True, False 앞이 대문자, int타입에서 0아닌 수(-1도) True값이다.
-      - |True|False|
-      - |:-|-:|
-      - |대문자|대문자|
       - 삼항 연산자
 
 
@@ -930,6 +927,11 @@ C/C++ database arduino raspberrypi IoT
           - variableLengthArgument.py
           - variableLengthKeywordArgument.py    #dict 클래스 (딕셔너리)
             - items()는 키와 값 쌍을 튜플의 형태로 반환한다.
+
+
+|이름|번호|비고|
+|:-|:-:|-:|
+|안녕|하세|요|
         
 
 
