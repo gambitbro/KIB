@@ -930,6 +930,27 @@ C/C++ database arduino raspberrypi IoT
             - |이름|번호|비고|
               |:-|:-:|-:|
               |안녕|하세|요|
+      - 람다(lambda)
+        - 기능을 매개변수로 전달하는 코드를 더 효율적으로 작성
+        - map이나 filter 함수 사용
+        - lambda.py
+        - filterMap.py
+      - 제너레이터(generator)
+        - 이터레이터를 직접 만들 때 사용하는 코드
+        - 함수 내부에 yield 키워드를 사용하면, 해당 함수는 제너레이터 함수가 됨
+      - 데코레이터(decorator)
+        - decorator.py
+    
+    - 문자열
+      - 문자열 함수
+        - stringMethod.py
+      - 단어 카운팅
+        - wordCounting.py
+      
+      - 문자열 서식
+        - fstring을 안쓰면 어떻게 써야하는가
+          - stringFormat.py   //문자열 서식 예제
+
         
 
 
