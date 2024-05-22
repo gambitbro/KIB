@@ -861,3 +861,62 @@ C/C++ database arduino raspberrypi IoT
     - 조건문
       - condition.py    //조건문 예시
       
+
+- # 2024-05-22 수
+-----------------
+  - python은 쓰레드 활용이 어렵다. 안정성을 위한 GIL이 있기 때문.
+
+  - python 복습
+    - 패키징 -> c/c++에선 라이브러리, python에선 패키징. 불러오는 것을 import라고한다. import에서 불러오는건 모듈, 패키징안에 모듈이 있는 것.
+    - 패키지를 추가하는방법 -> apt(site쪽), pip(dist쪽)
+
+    - 가상환경
+      - virtualenv + pip
+      - conda -> conda3라는 라이브러리가 따로 존재하고, 활용하는 라이브러리는 따로 운용한다. 깃에 올리는 것도 활용하는 라이브러리만.
+
+    - python의 변수
+      - 모두 class의 객체이다. int나 str도 클래스.
+      - 모든 class는 object클래스의 자식이다. object부모로부터 상속받음.
+      - 기본적으로 heap에 쌓이게됨. 동적으로 관리. gc(garbage collecter)가 자동으로 관리해준다.
+
+    - 자료형 확인
+      - type함수
+      - isinstance함수
+      - id함수
+    - 표준 입력 함수
+      - input 함수
+      - 리턴 값은 str이다
+    
+    - 리스트
+      - 리스트 메소드
+        - append, extend, insert, remove, pop, index, count, sort, reverse
+        - 리스트 복사 -> 기본적으로 얕은 복사
+      - 패킹과 언패킹
+    - 조건문
+      - if, elif, else
+      - True, False 앞이 대문자, int타입에서 0아닌 수(-1도) True값이다.
+      - 삼항 연산자
+
+
+
+  - python
+    - condition2.py   //elif사용
+
+    - 반복문
+      - for.py
+      - while.py
+
+    - multiplicationTable.py
+    - decimalToBinary.py
+    - reverseString.py
+
+    - numberGame.py
+    - muliplicationTable2.py
+    - calculateAverage.py
+
+    - if __name__ == "__main__": 을 쓰는 이유(enrty point) -> import를 할때 자체적으로 실행되는게 있을 수 있어서
+
+    - 함수
+      - function1.py
+      - varialbeRange.py    //지역변수 전역변수가 함수에서 작동하는 방식
+

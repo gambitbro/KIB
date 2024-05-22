@@ -25,7 +25,17 @@ def min():
     if [1,2,3]:
         print("참입니당")
         
+    # 삼항 연산자
+    x = 5
+    y = 3
+    if x > y:
+        print("x가 y보다 큽니다.")
+    else:
+        print("x가 y보다 작거나 같습니다.")
 
+    print("x가 y보다 큽니다.") if x > y else print("x가 y보다 작거나 같습니다.")
+
+    # (x > y)? printf("x가 y보다 큽니다."); : printf("x가 y보다 작거나 같습니다.");
 
 if __name__ == "__main__":
     min()
