@@ -927,11 +927,9 @@ C/C++ database arduino raspberrypi IoT
           - variableLengthArgument.py
           - variableLengthKeywordArgument.py    #dict 클래스 (딕셔너리)
             - items()는 키와 값 쌍을 튜플의 형태로 반환한다.
-
-
-|이름|번호|비고|
-|:-|:-:|-:|
-|안녕|하세|요|
+            - |이름|번호|비고|
+            - |:-|:-:|-:|
+            - |안녕|하세|요|
         
 
 
