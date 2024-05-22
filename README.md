@@ -864,9 +864,9 @@ C/C++ database arduino raspberrypi IoT
 
 - # 2024-05-22 수
 -----------------
-  - python은 쓰레드 활용이 어렵다. 안정성을 위한 GIL이 있기 때문.
+  - python은 쓰레드 활용이 어렵다. 안정성을 위한 GIL(글로벌 인터프리터 락)이 있기 때문.
 
-  - python 복습
+  - **python 복습**
     - 패키징 -> c/c++에선 라이브러리, python에선 패키징. 불러오는 것을 import라고한다. import에서 불러오는건 모듈, 패키징안에 모듈이 있는 것.
     - 패키지를 추가하는방법 -> apt(site쪽), pip(dist쪽)
 
@@ -899,7 +899,7 @@ C/C++ database arduino raspberrypi IoT
 
 
 
-  - python
+  - **python**
     - condition2.py   //elif사용
 
     - 반복문
@@ -914,9 +914,18 @@ C/C++ database arduino raspberrypi IoT
     - muliplicationTable2.py
     - calculateAverage.py
 
-    - if __name__ == "__main__": 을 쓰는 이유(enrty point) -> import를 할때 자체적으로 실행되는게 있을 수 있어서
+    - if __name__ == "__main__": main() 을 쓰는 이유(enrty point) -> import를 할때 자체적으로 실행되는게 있을 수 있어서
 
-    - 함수
+    - ***함수***
       - function1.py
-      - varialbeRange.py    //지역변수 전역변수가 함수에서 작동하는 방식
+      - variableRange.py    //지역변수 전역변수가 함수에서 작동하는 방식
+
+      - 함수의 인수(argument)
+        - keywordArgument.py    //함수의 매개변수
+
+        - 가변 인수 사용 예제
+          - variableLengthArgument.py
+          - variableLengthKeywordArgument.py    #dict 클래스 (딕셔너리)
+            - items()는 키와 값 쌍을 튜플의 형태로 반환한다.
+
 
