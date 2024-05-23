@@ -948,9 +948,60 @@ C/C++ database arduino raspberrypi IoT
         - wordCounting.py
       
       - 문자열 서식
-        - fstring을 안쓰면 어떻게 써야하는가
+        - f-string을 안쓰면 어떻게 써야하는가
           - stringFormat.py   //문자열 서식 예제
 
         
+
+- # 2024-05-23 목
+-----------------
+
+- **python**
+  - 자료구조
+    - 스택 -> last in first out, LIFO
+    - 큐 -> first in first out, FIFO
+    - 튜플 -> 변경이 불가능
+    - 세트 -> 순서없이 저장하되 중복을 불허
+
+    - setUnion.py // set()와 합,교,차집합 메소드
+
+    - ***딕셔너리 dictionary***
+      - 키key(색인)
+      - 값value
+      - 키와 값을 묶어둔 세트가 items
+      - 딕셔너리 변수 = {키1:값1, 키2:값2}
+      - 내부구조가 hash로 되어있고, 그래서 검색속도가 빠르다. 리스트보다 빠름.
+      - 메소드 -> keys(), values(), items() 
+      - for key, value in student_info.items(): print(key, value)
+
+      - dictionaryFunction.py
+
+    - collections 모듈
+      - from collections import deque
+      - appendleft(), rotate(), pop(), popleft() 등의 메소드를 쓴다
+      
+      - OrderedDict 모듈
+        - 순서를 가진 딕셔너리 객체
+      - defaultdict 모듈
+        - 딕셔너리 변수를 생성할 때 키에 기본값을 지정하는 방법
+      - counter 모듈
+      - namedtuple 모듈
+
+      - collectionsModules.py
+      - textMining.py
+
+  - 파이썬 스타일 코드
+    - split(), join()
+      - splitFunction.py
+    - list comprehension
+      - listComprehension.py
+    - enumerate()
+    - zip()
+      - zipFunction.py
+
+  - 파이썬 스타일 코드 2
+    - mapReduce.py      //reduce()써보기
+
+
 
 
