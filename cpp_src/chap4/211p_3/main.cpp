@@ -21,7 +21,7 @@ int main(void)
     //     }
     // }
 
-    // 2. string의 fine 함수를 이용하는 방법
+    // 2. string의 find 함수를 이용하는 방법
     int pos = 0;
     while(1){
         pos = strInput.find('a', pos);

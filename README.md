@@ -1002,6 +1002,36 @@ C/C++ database arduino raspberrypi IoT
   - 파이썬 스타일 코드 2
     - mapReduce.py      //reduce()써보기
 
+  
+  - 객체 지향 프로그래밍
+    - Class
+      - python에서는 생성자, 소멸자 대신 "__init__(self)" 메소드를 쓴다.
+      - "__str__(self)" 라는 스페셜 메소드를 정의를 한다.
+      - pythonClass.py
+
+      - notebookPython.py // 노트북 프로그램 만들기 
+    
+    - 상속
+      - inheritancePerson.py
+        - 어떤 class가 상속을 받았으면 super().__init__(name, age, gender) 이런식의 super()는 세트로 들어간다.
+
+    - 다형성 polymorphism
+      - 같은 이름의 메소드가 다른 기능을 하는 것
+      - polymorphismClass.py
+
+    - 가시성 visibility
+      - visibilityClass.py
+      - @property 사용
+      - private변수로 선언은 __items 이런식으로
+  
+  - 책에 없는 내용
+    - classVariable.py
+
+  - pygame 제작실습
+
+
+
+
 
 
 
