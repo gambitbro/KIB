@@ -1100,6 +1100,15 @@ C/C++ database arduino raspberrypi IoT
     csv1.py
     csv3.py
     csv4.py
+    loggingTest.py
+    configParserTest.py
+    loggingprogram.py
+    loggingformatter.py
+    html.py
+    lab2.py
+    beautifulSoup1.py
+    
+
 
 
 
