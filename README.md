@@ -1031,6 +1031,77 @@ C/C++ database arduino raspberrypi IoT
 
 
 
+- # 2024-05-24 금
+-----------------
+
+- python 복습
+  - python의 자료구조
+    - list( [] ), tuple(순서를 바꿀 수 없음)
+    - dict( {} )
+      - key, value
+      - key값으로 인덱싱 가능: (( )[키값]) -> value가 나온다
+    - set( () )
+      - .add, .remove
+      - 연산자 |(합집합, .union), &(교집합, .intersection), -(차집합, .difference)
+
+    - 스택 FILO
+    - 큐 FIFO
+
+    - collection
+      - dequeue
+    
+  - python 스타일코드 (파이덴틱, 파이써닉)
+    - split, join
+    - list comprehension
+      - [i for i in range()]
+  
+  - 객체지향 프로그래밍 (object oriented programming)
+    - 클래스를 선언한 뒤, 클래스를 가지고 객체를 만든다.
+    - 클래스의 특징(인스턴스 변수, 메소드)을 객체가 이어받는다.
+
+    - python에서 클래스를 쓸때 주의해야 할 점
+      - class ... (부모 클래스):
+      - 전부다 public
+      - c++의 생성자, 소멸자가 없고, __init__
+      - self라고하는 객체 자신을 나타내는 키워드가 있다. (*this)
+      - 첫번째 argument로 반드시 self를 받는다.
+      
+    - 다형성, 가시성
+      - __ 를 붙이면 외부에서 접근 불가능
+
+- python
+  - 모듈 만들기
+    - random 모듈
+    - time 모듈
+    - urllib 모듈
+  - 패키지 만들기
+    - crawling
+    - database
+    - analysis
+
+  - 가상환경 패키지 실습
+    - /home/qq43/KIB/python/pythonData/matplotTest.py
+    - conda install jupyter
+  
+  - 예외처리
+    - tryExcept.py
+
+
+  //정리//
+  tryExcept.py
+  assertTest.py
+  fileOpen.py
+  fileWrite.py
+  mkdir1.py
+  pickleTest.py
+  pickleTest2.py
+  
+  pythonData폴더
+    csv1.py
+    csv3.py
+    csv4.py
+
+
 
 
 
