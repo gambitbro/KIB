@@ -1104,11 +1104,120 @@ C/C++ database arduino raspberrypi IoT
     configParserTest.py
     loggingprogram.py
     loggingformatter.py
-    html.py
+    htmlTest.py
     lab2.py
     beautifulSoup1.py
-    
 
+
+
+- # 2024-05-27 월
+-----------------
+- **데이터 과학을 위한 통계**
+
+  - **1.1 정형 데이터의 종류**
+    - 수치형 데이터
+      - 연속형 데이터: 일정 범위의 값
+      - 이산 데이터: 정수만 취할 수 있는 데이터
+    - 범주형 데이터
+      - 이진 데이터: 값이 2개인 데이터(남/여, 참/거짓, 0/1)
+      - 순서형 데이터: 수치 사이에 순위가 있는 데이터(성적)
+
+  - **1.2 테이블 데이터(데이터 분석에서 가장 대표적으로 사용되는 객체의 형태)**
+    - 데이터 프레임: 통계와 머신러닝 모델에서 가장 기본이 되는 테이블 형태의 데이터 구조
+    - 피처(feature): SQL에서의 컬럼
+    - 결과(outcome): 실험이나 연구에서 결과를 예측하기 위해 피처 사용
+    - 레코드(record): 일반적으로 테이블의 각 행은 하나의 레코드
+  
+    - 테이블 형식이 아닌 데이터구조: 테이블 데이터로 변환 후 쓴다
+
+  - **1.3 위치추정**
+    - 평균(mean/average)
+    - 절사평균: 양 끝에서 일정 개수의 값을 삭제한 후 평균을 구한다.
+    - 가중평균: 센서와 관련. 부정확한 센서는 가중값을 높게 준다. 데이터 수집 시 대조군이 항상 똑같은 수가 얻어지지는 않기 때문에, 가중값을 줘서 두 집단의 영향력을 비슷하게 맞출때 가중평균을 쓴다.
+    - 중간값: 데이터를 일렬로 정렬했을 때, 한가운데에 위치하는 값.
+    - 가중 중간값: //
+    - 로버스트: //
+
+    - ***1.3.3_meanWeight.py*** [위치추정: 평균,절사평균,중간값,가중평균,가중중간값](python/pythonData/1.3.3_meanWeight.py)
+
+  - **1.4 변이(variability)추정**
+    - 편차: 관측값과 위치 추정값 사이의 차이
+      - 평균을 기준으로 편차의 합은 항상 0
+      - 평균 절대 편차: 편차의 절대값의 평균
+    - 분산: //
+    - 표준편차: 분산에 제곱근을 한 값
+    - 중위 절대 편차(MAD): 로버스트한 변이 추정값. 중간값과의 편차를 구하고, 그 값들의 절대값에 대한 중간값
+    - 백분위수: //
+      - 사분위범위(IQR): //
+
+    - ***1.4.3_deviation.py*** [변이추정: 표준편차,사분위범위(IQR), 중위절대편차(MAD)](python/pythonData/1.4.3_deviation.py)
+
+  - **1.5 데이터 분포 탐색**
+    - boxplot(상자그림)
+    - 도수분포표(frequency table)
+    - 히스토그램(histogram)
+    - 밀도그림(density plot)
+
+    - ***1.4.3_deviation.py*** [boxplot](python/pythonData/1.4.3_deviation.py)
+
+    - ***1.5.2_histogramTest.py*** [도수분포표와 히스토그램](python/pythonData/1.5.2_histogramTest.py)
+
+  - **1.6 이진 데이터와 범주 데이터 탐색**
+    - 최빈값(mode)
+    - 기댓값(expected value): 범주에 해당하는 어떤 수치가 있을때, 범주의 출현 확률에 따른 평균
+    - 막대도표(bar chart)
+    - 파이그림(pie chart)
+
+    - ***p47_categoryDate.py*** [이진데이터 막대도표로 표현](python/pythonData/p47_categoryDate.py)
+
+  
+  - **1.7 상관관계**
+    - 상관계수
+    - 상관행렬
+    - 산점도(scatterplot)
+
+    - ***p52_correlation.py*** [상관관계](python/pythonData/p52_correlation.py)
+
+
+
+
+
+- **numpy**
+  - ***numpyArray.py*** [numpy 실습](python/pythonData/numpyTest/numpyArray.py)
+
+  - ***numpyMethod.py*** [reshape, flatten](python/pythonData/numpyTest/numpyMethod.py)
+
+  - ***numpyIndexing.py*** [indexing, slicing](python/pythonData/numpyTest/numpyIndexing.py)
+
+  - ***numpyConstruction.py*** [배열생성함수: ones(),zeros(),empty(), 통계분석함수](python/pythonData/numpyTest/numpyConstruction.py)
+
+  - ***numpySum.py*** [연산함수: arange()](python/pythonData/numpyTest/numpySum.py)
+
+  - ***numpyStack.py*** [연결함수](python/pythonData/numpyTest/numpyStack.py)
+
+  - ***numpyDot.py*** [행렬연산](python/pythonData/numpyTest/numpyDot.py)
+
+  - ***numpyBroadcasting.py*** [브로드캐스팅 연산](python/pythonData/numpyTest/numpyBroadcasting.py)
+
+  
+
+- **정리**
+  - 통계를 왜 배우는가 -> 빅데이터
+  - 대표값: 평균, 중간값, 가중평균, 절사평균
+            분산, 편차, 절대편차, **표준편차(분산에 루트씌운것)**, 백분위와 IQR
+
+  - 이러한 값들을 가지고 그래프를 그림 (데이터 분포 탐색)
+    - 수치 데이터 -> 히스토그램 x-y, box plot 
+    - 이산데이터, 범주데이터 -> 히스토그램
+  
+  - 상관관계 corr -> -1 ~ 1, heatmap으로 표현
+
+  - numpy: []리스트가 기본 타입이지만, 약점이 있었다. c-type array사용.
+    - 선언: ones(), zeros(), empty()등
+    - 메소드: reshape (주의사항: 원소의 개수를 맞춰야한다)
+    - 사칙연산
+    - dot
+    - broadcasting: 증식하여 행렬이 맞춰져 연산됨(논리적으로 증식이 가능할 것 같은 경우에만)
 
 
 
