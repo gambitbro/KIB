@@ -167,19 +167,19 @@ C/C++ database arduino raspberrypi IoT
         상대방 데이터에 대하여 락을 요청하면 무한 대기 상태에 빠질 수 있음
 
 
-# 2024-03-12 화
+## 2024-03-12 화
 ---
 
 - 마이크로 컨트롤러
   - 임베디드 시스템(Embedded System) : 특정한 용도로 맞춰서 만드는 시스템
 
-# 2024-03-26 화
+## 2024-03-26 화
 ---------------
 - 우분투 리눅스 터미널 훑어보기
 - C++ 기본 cout, cin, include하기
   - using namespace std 사용 -> std::cout 이걸로 쓰다가 너무 많아져서 사용
 
-# 2024-03-27 수
+## 2024-03-27 수
 ---------------
 - C언어 훑어보기
   - printf("%d", 10);
@@ -228,7 +228,7 @@ C/C++ database arduino raspberrypi IoT
     - while문 : 조건이 참일 때, 계속해서 반복하다가 조건이 맞지않으면 빠져나올 때.
     - do-while문 : 한번은 무조건 실행시키게 할 때.
 
-# 2024-03-28 목
+## 2024-03-28 목
 ---------------
  - C언어 훑어보기
 
@@ -263,16 +263,16 @@ C/C++ database arduino raspberrypi IoT
     stack영역의 변수들은 사라지니까(함수가 끝나면 지역변수가 사라지니까) malloc을 써서, 함수에서 나온 return값을 heap에 저장한다.
 
 
-# 2024-03-29 금
+## 2024-03-29 금
 ---------------
 - C언어 실습(예제)
 
-# 2024-04-01 월
+## 2024-04-01 월
 ---------------
 - C언어 string 입력받아서 숫자, 연산자 구분하기
 - C++ 클래스 선언, 클래스 구현(함수 구현)
 
-# 2024-04-02 화
+## 2024-04-02 화
 ---------------
 - C++ 클래스 선언, 멤버 변수, 멤버 함수 구현 (TV예시)
 
@@ -294,7 +294,7 @@ C/C++ database arduino raspberrypi IoT
     - 아무것도 안쓰면 private.
     - 생성자는 public으로 선언.
 
-- # 2024-04-03 수
+## 2024-04-03 수
 ---------------
 - 객체 포인터와 객체 배열
   - 예시
@@ -304,7 +304,7 @@ C/C++ database arduino raspberrypi IoT
       cout << p->getArea() << endl;
       cout << (*p).getArea() << endl;   donut.getArea()
 
-- # 2024-04-04 목
+## 2024-04-04 목
 -----------------
 - C++
 
@@ -323,7 +323,7 @@ C/C++ database arduino raspberrypi IoT
       - this는 멤버 함수에서만 사용할 수 있다.
       - static member function는 this를 사용할 수 없다.
 
-- # 2024-04-05 금
+## 2024-04-05 금
 -----------------
 - C++
 
@@ -350,7 +350,7 @@ C/C++ database arduino raspberrypi IoT
     - 복사 생성자
       - 얕은 복사(주소만 복사), 깊은 복사(주소와 그 안의 값까지)
 
-- # 2024-04-08 월
+## 2024-04-08 월
 -----------------
 - C++
   - 복사 생성자
@@ -361,7 +361,7 @@ C/C++ database arduino raspberrypi IoT
     - 복사 생성자의 매개변수는 오직 하나다. 자기 클래스에 대한 참조로 선언됨. 클래스에 무조건 한 개.
     - 디폴트 복사 생성자는 얇은 복사를 실행하도록 만들어진 코드이기 때문에 깊은 복사를 하려면 직접 만들어야 한다.
 
-- # 2024-04-09 화
+## 2024-04-09 화
 -----------------
 - C++
   - 272p_8
@@ -391,7 +391,7 @@ C/C++ database arduino raspberrypi IoT
 
         - static 멤버 함수는 오직 static 멤버 변수들만 접근
 
-- # 2024-04-11 목
+## 2024-04-11 목
 -----------------
 - C++
   - friend와 연산자 중복
@@ -410,7 +410,7 @@ C/C++ database arduino raspberrypi IoT
       - 연산자 중복은 반드시 클래스와 관계를 가진다. 중복된 연산자는 반드시 피연산자에 객체를 동반한다.
       
 
-- # 2024-04-12 금
+## 2024-04-12 금
 -----------------
 - C++
   - 상속
@@ -427,7 +427,7 @@ C/C++ database arduino raspberrypi IoT
     - 가상 상속
 
 
-- # 2024-04-15 월
+## 2024-04-15 월
 -----------------
 
 - AVR
@@ -446,14 +446,14 @@ C/C++ database arduino raspberrypi IoT
     - RS-232C를 이용한 비동기식 전송시 규약
 
 
-- # 2024-04-16 화
+## 2024-04-16 화
 ------------------
 
 - AVR
   - A/D 컨버터
   - text LCD
 
-- # 2024-04-18 목
+## 2024-04-18 목
 -----------------
 
 - TCP/IP 소켓 프로그래밍
@@ -461,7 +461,7 @@ C/C++ database arduino raspberrypi IoT
   - IP: pc 찾아가기
   - port: pc 안에 서버 찾아가기
 
-- # 2024-04-22 월
+## 2024-04-22 월
 -----------------
 
 - TCP/IP 소켓 프로그래밍
@@ -475,7 +475,7 @@ C/C++ database arduino raspberrypi IoT
     - TCP는 신뢰성을 보장하기 때문에 UDP에 비해 복잡한 프로토콜이다.
 
 
-- # 2024-04-23 화
+## 2024-04-23 화
 -----------------
 
 - TCP/IP 소켓 프로그래밍
@@ -487,7 +487,7 @@ C/C++ database arduino raspberrypi IoT
     - 멀티 프로세스는 부담스럽다.
 
 
-- # 2024-04-24 수
+## 2024-04-24 수
 -----------------
 
 - TCP/IP 소켓 프로그래밍
@@ -498,13 +498,13 @@ C/C++ database arduino raspberrypi IoT
       - 동일한 메모리 영역에 접근하는 쓰레드의 실행순서를 지정해야 하는 상황 -> Semaphore 사용
 
 
-- # 2024-04-25 목
+## 2024-04-25 목
 -----------------
 
 - 아두이노나 AVR이 센싱이나 액츄에이터 역할을 하고, 그로 인해 얻은 데이터를 UART통신으로 라즈베리파이로 전송
 
 
-- # 2024-04-26 금
+## 2024-04-26 금
 -----------------
 
 - I2C 통신
@@ -513,14 +513,14 @@ C/C++ database arduino raspberrypi IoT
   - SDA(시리얼 데이터), SCL(시리얼 클럭)
   - 라즈베리파이에서 온습도 센서, LED, 자이로센서 등과 연결하여 데이터통신을 하기 위해서는 주소가 먼저 필요하다.
 
-- # 2024-04-29 월
+## 2024-04-29 월
 -----------------
 
 - Arduino
   - 아두이노를 활용한 LED 켜기, 끄기, 인터럽트사용.
 
 
-- # 2024-05-03 금
+## 2024-05-03 금
 -----------------
 
 - OpenCV
@@ -564,7 +564,7 @@ C/C++ database arduino raspberrypi IoT
   - KIB/openCV/chap1~4 line.cpp까지했음
 
 
-- # 2024-05-07 화
+## 2024-05-07 화
 -----------------
 - openCV
   - 복습
@@ -639,7 +639,7 @@ C/C++ database arduino raspberrypi IoT
     - saturated.cpp
 
 
-- # 2024-05-08 수
+## 2024-05-08 수
 -----------------
 
 - openCV
@@ -737,7 +737,7 @@ C/C++ database arduino raspberrypi IoT
     - canny.cpp
 
 
-- # 2024-05-09 목
+## 2024-05-09 목
 -----------------
   - openCV
 
@@ -811,7 +811,7 @@ C/C++ database arduino raspberrypi IoT
 
 
 
-- # 2024-05-21 화
+## 2024-05-21 화
 -----------------
 
   - Python 파이썬
@@ -862,7 +862,7 @@ C/C++ database arduino raspberrypi IoT
       - condition.py    //조건문 예시
       
 
-- # 2024-05-22 수
+## 2024-05-22 수
 -----------------
   - python은 쓰레드 활용이 어렵다. 안정성을 위한 GIL(글로벌 인터프리터 락)이 있기 때문.
 
@@ -953,7 +953,7 @@ C/C++ database arduino raspberrypi IoT
 
         
 
-- # 2024-05-23 목
+## 2024-05-23 목
 -----------------
 
 - **python**
@@ -1031,7 +1031,7 @@ C/C++ database arduino raspberrypi IoT
 
 
 
-- # 2024-05-24 금
+## 2024-05-24 금
 -----------------
 
 - python 복습
@@ -1110,7 +1110,7 @@ C/C++ database arduino raspberrypi IoT
 
 
 
-- # 2024-05-27 월
+## 2024-05-27 월
 -----------------
 - **데이터 과학을 위한 통계**
 
@@ -1222,5 +1222,40 @@ C/C++ database arduino raspberrypi IoT
 
 
 
+## 2024-05-28 화
+-----------------
+
+- **numpy**
+  - 비교 연산
+    - ***numpyBoolIndex.py*** [비교연산, 비교연산함수, 인덱스 반환함수, 정렬된 값의 인덱스를 반환하는 함수(argsort,argmax,argmin)](python/pythonData/numpyTest/numpyBoolIndex.py)
+
+    - ***numpyFancyIndex.py*** [인덱스를 활용한 데이터 추출: boolean index, fancy index](python/pythonData/numpyTest/numpyFancyIndex.py)
 
 
+- **pandas**
+  - python계의 엑셀
+  - 시리즈(series): 컬럼이 1개인 데이터프레임
+  - 시리즈를 여러개 모아놓으면 데이터프레임(데이터 테이블 전체를 포함하는 객체)
+  - ***pandasSeries.py*** [Series 객체 생성, 이름변경](python/pythonData/pandasTest/pandasSeries.py)
+
+  - pandas는 컬럼별로 타입을 다르게 지정할 수 있다.
+
+  - 객체 생성
+    - ***pandasDataFrame.py*** [데이터프레임 생성](python/pythonData/pandasTest/pandasDataFrame.py)
+
+  - 데이터 추출
+    - ***pandasExcel.py*** [엑셀 파일에서 데이터 추출](python/pythonData/pandasTest/pandasExcel.py)
+
+  - 그룹별 집계
+    - ***pandasGroup.py*** [그룹별 집계](python/pythonData/pandasTest/pandasGroup.py)
+
+    - 그룹화된 상태에서(grouped)
+    - ***pandasGroup2.py*** [그룹화된 상태_집계, 변환, 필터](python/pythonData/pandasTest/pandasGroup2.py)
+
+  - 병합과 연결
+    - ***pandasJoin.py*** [병합, 연결](python/pythonData/pandasTest/pandasJoin.py)
+
+    - ***pandasConcat.py*** [](python/pythonData/pandasTest/pandasConcat.py)
+  //
+
+- **//**
