@@ -1270,5 +1270,7 @@ C/C++ database arduino raspberrypi IoT
 
   - ***pyplotBar*** [막대그래프](python/pythonData/visualTest/pyplotBar.py)
 
+
 - **seaborn**
   - ***seabornLinePlot.py*** [시본의 기본 그래프](python/pythonData/visualTest/seabornLinePlot.py)
+  - ***seabornLinePlot.ipynb*** [Jupyter](python/pythonData/visualTest/seabornLinePlot.ipynb) 
