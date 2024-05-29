@@ -1295,8 +1295,10 @@ C/C++ database arduino raspberrypi IoT
 
     - ***categoryPlot.py*** [범주형 변수 대 범주형 변수, 범주형 변수 대 수치형 변수, 바이올린 도표, 다변수 시각화](python/pythonData/categoryPlot.py)
 
+
+
   - 데이터와 표본분포
-    - 임의 표본 추출: 대상이 되는 모집단 내의 선택 가능한 원소들을 무작위로 추출하는 과정
+    - **임의 표본 추출**: 대상이 되는 모집단 내의 선택 가능한 원소들을 무작위로 추출하는 과정, 원칙 지키는 것 중요.
       계층(stratum): 공통된 특징을 가진 모집단의 동종 하위 그룹
       표본편향(sample bias): 모집단을 잘못 대표하는 표본
 
@@ -1310,5 +1312,26 @@ C/C++ database arduino raspberrypi IoT
 
     - **중심 극한 정리(central limit theorem)**
       - ...
+    
+    - 표준오차
+      - 표본 값들의 표준편차s와 표본크기 n을 기반으로 한 통계량을 이용하여 추정
 
+    - 부트스트랩
+      - ***resampleTest.py*** [부트스트랩](python/pythonData/resampleTest.py)
 
+    - 정규분포
+      - ***qqgraph.py*** [표준정규분포](python/pythonData/qqgraph.py)
+
+    - 긴꼬리분포
+      - ***qqBlackSwan.py*** [긴꼬리분포](python/pythonData/qqBlackSwan.py)
+
+    - T 분포
+    - 이항분포
+      - 이항식: 두 가지 결과를 갖는다.
+        이항시행: 두 가지 결과를 가져오는 시행
+        이항분포: n번의 시행에서 성공한 횟수에 대한 분포
+      - ***binormTest.py*** [이항분포](python/pythonData/binormTest.py)
+      
+    - 카이제곱분포
+    - F 분포
+    - 푸아송 분포
