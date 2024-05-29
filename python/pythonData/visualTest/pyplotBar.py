@@ -25,6 +25,7 @@ def main():
         plt.bar(X, data2[i], bottom = np.sum(data2[:i], axis = 0), color = color_list[i], label = data_label[i])
     plt.legend()
     plt.show()
+    
 
 
 if __name__ == "__main__":

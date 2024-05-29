@@ -1273,4 +1273,42 @@ C/C++ database arduino raspberrypi IoT
 
 - **seaborn**
   - ***seabornLinePlot.py*** [시본의 기본 그래프](python/pythonData/visualTest/seabornLinePlot.py)
-  - ***seabornLinePlot.ipynb*** [Jupyter](python/pythonData/visualTest/seabornLinePlot.ipynb) 
+  - ***seabornLinePlot.ipynb*** [Jupyter](python/pythonData/visualTest/seabornLinePlot.ipynb)
+
+
+## 2024-05-98 수
+-----------------
+
+- **플롯리(plotly)**
+  - ***plotlyTest.ipynb*** [플롯리](python/pythonData/visualTest/plotlyTest.ipynb)
+
+
+- **데이터 과학을 위한 통계**
+
+  - 탐색적 데이터 분석
+
+    - ***p52_correlation.py*** [전에 부족했던 부분 추가](python/pythonData/p52_correlation.py)
+
+    - ***scatterTelecom.py*** [산점도그리기](python/pythonData/scatterTelecom.py)
+
+    - ***multivariatePlot.py*** [육각형 구간과 등고선](python/pythonData/multivariatePlot.py)
+
+    - ***categoryPlot.py*** [범주형 변수 대 범주형 변수, 범주형 변수 대 수치형 변수, 바이올린 도표, 다변수 시각화](python/pythonData/categoryPlot.py)
+
+  - 데이터와 표본분포
+    - 임의 표본 추출: 대상이 되는 모집단 내의 선택 가능한 원소들을 무작위로 추출하는 과정
+      계층(stratum): 공통된 특징을 가진 모집단의 동종 하위 그룹
+      표본편향(sample bias): 모집단을 잘못 대표하는 표본
+
+    - 편향 -> 통계적 편향은 계통적인(systematic) 오차를 의미한다.
+    - 임의의 표본 추출이 정확하게 이루어져야 한다.
+    - 선택편향: 관측 데이터를 선택하는 방식 때문에 생기는 편향 
+      데이터 스누핑: 뭔가 흥미로운 것을 찾아 광범위하게 데이터를 살피는 것
+
+    - **평균으로의 회귀(regression to the mean)**
+      - ...
+
+    - **중심 극한 정리(central limit theorem)**
+      - ...
+
+
