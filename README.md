@@ -1357,3 +1357,22 @@ C/C++ database arduino raspberrypi IoT
 
     - 분산 분석(analysis of variance, ANOVA)
       - ***anovaTest.py*** [anova](python/pythonData/anovaTest.py)
+
+    - ***fStatistics.py*** [f-statistic](python/pythonData/fStatistics.py)
+    - ***chi2Statistics.py*** [chi2Statistics](python/pythonData/chi2Statistics.py)
+    - ***effectiveSize.py*** [effectiveSize](python/pythonData/effectiveSize.py)
+
+
+  - 회귀와 예측 (머신러닝과 직접관련)
+    - 지도학습 (target이 있는 학습)
+      비 지도학습 (target이 없는 학습)
+    
+    - 단순 선형 회귀
+      - 응답변수(y값): 예측하고자 하는 변수
+        독립변수(x값): 응답치를 예측하기 위해 사용되는 변수
+        레코드: 한 특정 경우에 대한 입력과 출력을 담고 있는 벡터
+      
+      - ***linearRegresstionTest.py*** [](python/pythonData/linearRegresstionTest.py)
+    
+    - **다중 선형 회귀**
+      - ***multiLinearReg.py*** [다중선형회귀 예제](python/pythonData/multiLinearReg.py)
