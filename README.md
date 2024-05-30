@@ -1276,7 +1276,7 @@ C/C++ database arduino raspberrypi IoT
   - ***seabornLinePlot.ipynb*** [Jupyter](python/pythonData/visualTest/seabornLinePlot.ipynb)
 
 
-## 2024-05-98 수
+## 2024-05-29 수
 -----------------
 
 - **플롯리(plotly)**
@@ -1335,3 +1335,17 @@ C/C++ database arduino raspberrypi IoT
     - 카이제곱분포
     - F 분포
     - 푸아송 분포
+
+
+
+## 2024-05-30 목
+-----------------
+
+- **orange**
+  - 머신러닝: 지도학습[target]
+    - f(x, y) = ax + by + c
+
+- **데이터 과학을 위한 통계**
+
+  - 통계적 실험과 유의성 검정
+    - 
