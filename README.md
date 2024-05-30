@@ -1348,4 +1348,12 @@ C/C++ database arduino raspberrypi IoT
 - **데이터 과학을 위한 통계**
 
   - 통계적 실험과 유의성 검정
-    - 
+    - ***permuteSample.py*** [재표본추출.순열검정(웹사이트 정보)](python/pythonData/permuteSample.py)
+
+    - ***permuteSample2.py*** [통계적유의성과 p값.순열검정](python/pythonData/permuteSample2.py)
+
+    - ***pValue.py*** [p-value](python/pythonData/pValue.py)
+    - ***tTest*** [t-test](python/pythonData/tTest.py)
+
+    - 분산 분석(analysis of variance, ANOVA)
+      - ***anovaTest.py*** [anova](python/pythonData/anovaTest.py)
