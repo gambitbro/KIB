@@ -1376,3 +1376,36 @@ C/C++ database arduino raspberrypi IoT
     
     - **다중 선형 회귀**
       - ***multiLinearReg.py*** [다중선형회귀 예제](python/pythonData/multiLinearReg.py)
+
+
+
+## 2024-05-31 금
+-----------------
+- 빅데이터 -> IoT기기에서 센서설정을 먼저 해야함 -> data생성 -> MySQL에 저장(database에 저장) -> 분석 및 분석한 데이터로 의미있는 결과, 모델을 뽑아냄 -> 머신러닝으로 모델을 훈련, 예측
+- 그래프 ( plt(matplot), sns(seaborn) )
+- 기본 데이터 다루기( numpy(속도가 빠름), pandas(파이썬의 엑셀, 행과 열로 이루어진 2차원 데이터를 column, row를 이용해서 다룸)(Series, DataFrame) )
+- 데이터의 분류
+  - 수치형: 숫자, linear모델(linear regression)도 잘 작동함
+  - 범주형: 범주형은 수치형으로 바꿀 수 있음.
+- 모집단과 샘플
+
+- chapter 4  
+  - y = f(x)에 대해
+    - 수치형은 y값 자체가 중요
+    - 범주형은 2차원 그래프에 그려진 선에서 위쪽인지 아래쪽인지가 중요
+  - **train(fit)**
+
+
+
+- **4장 회귀와 예측**
+  - ***subsetRegresstion.py*** [subsetRegression](python/pythonData/subsetRegresstion.py)
+
+  - ***weightRegre*** [weightRegre](python/pythonData/weightRegre.py)
+
+  - 회귀에서의 factor variable
+  
+  - 다수의 수준을 갖는 요인변수들
+    - ***manyLevelStep.py*** [manyLevelStep.py](python/pythonData/manyLevelStep.py)
+
+  - 회귀진단
+    - 특잇값(outlier)
