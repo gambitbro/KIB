@@ -1405,7 +1405,18 @@ C/C++ database arduino raspberrypi IoT
   - 회귀에서의 factor variable
   
   - 다수의 수준을 갖는 요인변수들
-    - ***manyLevelStep.py*** [manyLevelStep.py](python/pythonData/manyLevelStep.py)
+    - ***manyLevelStep.py*** [manyLevelStep](python/pythonData/manyLevelStep.py)
 
   - 회귀진단
     - 특잇값(outlier)
+    - ***outlierAnalysis.py*** [outlierAnalysis](python/pythonData/cooksDistance.py)
+  
+  - ***cooksDistance.py*** [cookDistance](python/pythonData/cooksDistance.py)
+
+  - ***heteroskedasticity.py*** [heteroskedasticiy](python/pythonData/heteroskedasticity.py)
+
+  - ***partialResidualPlot.py*** [partialResidualPlot](python/pythonData/partialResidualPlot.py)
+
+  - ***polynomialRegression.py*** [polynomialRegression](python/pythonData/polynomialRegression.py)
+
+  - 

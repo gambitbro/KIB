@@ -6,26 +6,28 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from statsmodels.stats.outliers_influence import OLSInfluence
 
+
 def main():
     folder = "/home/qq43/KIB/python/pythonData/data/"
     house : pd.DataFrame = pd.read_csv(folder + "house_sales.csv", sep='\t')
     print(house.head())
     print(house.info())
-    house_98105 = house.loc[house['Zipcode'] == 98105, :]
+    house_98105 = house.loc[house['ZipCode'] == 98105, :]
     predictors = ['SqFtTotLiving', 'SqFtLot', 'Bathrooms', 'Bedrooms', 'BldgGrade']
     outcome = 'AdjSalePrice'
-    print(house.groupby('Zipcode')['AdjSalePrice'].mean())
+    print(house.groupby('ZipCode')['AdjSalePrice'].mean())
 
     house_outlier = sm.OLS(house_98105[outcome], house_98105[predictors].assign(const=1))
     results_98105 = house_outlier.fit()
-    influence = results_98105.get_influence()
-    sresiduals = influence.resid_studentized_internal
-    print(sresiduals.idxmin(), sresiduals.idxmax())
-
-    outlier = house_98105.iloc[[sresiduals.idxmax()], :]
-    print(f"AdjSalePrice: {outlier['AdjSalePrice'].values[0]:.3f}")
-
-
-
+    influence = OLSInfluence(results_98105)
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.axhline(-2.5, linestyle='--', color='C1')
+    ax.axhline(2.5, linestyle='--', color='C1')
+    ax.scatter(influence.hat_matrix_diag, influence.resid_studentized_internal, s=1000*np.sqrt(influence.cooks_distance[0]), alpha=0.5)
+    ax.set_xlabel('hat value')
+    ax.set_ylabel('studentized residual')
+    plt.show()
+    
 if __name__ == "__main__":
     main()
