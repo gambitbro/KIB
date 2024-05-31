@@ -1419,4 +1419,13 @@ C/C++ database arduino raspberrypi IoT
 
   - ***polynomialRegression.py*** [polynomialRegression](python/pythonData/polynomialRegression.py)
 
-  - ******
+- 5장 분류
+  - 나이브 베이즈(naive Bayes): 나이브 베이즈 알고리즘은 주어진 결과에 대해 예측변숫값을 관찰할 확률을 사용하여, 예측변수가 주어졌을 때, 결과 Y = i를 관찰할 확률, 즉 정말 관심있는 것을 추정한다. 
+
+  - ***naiveBayes*** [naiveBayes](python/pythonData/naiveBayes.py)
+
+  - ***descriminantAnalysis.py*** [descriminantAnalysis](python/pythonData/descriminantAnalysis.py)
+
+
+
+  
