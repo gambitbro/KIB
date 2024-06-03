@@ -1462,6 +1462,14 @@ C/C++ database arduino raspberrypi IoT
       - ***featureEngineering.py*** [KNN을 통한 featureEngineering](python/pythonData/featureEngineering.py)
 
 
+      - ***datasetTest.py*** [pytorch폴더 datasetTest](pytorch/datasetTest.py)
+      - ***train_vaild_split.py*** [train_vaild_split](pytorch/train_valid_split.py)
+
+      - ***decisionTreeTest.py*** [decisionTree](pytorch/decisionTreeTest.py)
+
+
+
+
 
 
 
