@@ -1428,4 +1428,31 @@ C/C++ database arduino raspberrypi IoT
 
 
 
+## 2024-06-03 월
+-----------------
+
+- 복습
+  - 지도학습
+    - 회귀(Regression)
+    - 분류(Classification): 나이브 베이즈, 판별분석
+  - 비지도학습: target이 없음
+
+
+- 데이터 과학을 위한 통계
+  - 5장 분류
+    - 로지스틱 회귀
+      - ***logisticRegression.py*** [로지스틱 회귀](python/pythonData/logisticRegression.py)
+
+      - ***assessingModel.py*** [모델 평가하기](python/pythonData/assessingModel.py)
+
+    - 분류 모델 평가
+      - ***confusionMatrix.py*** [conf_mat](python/pythonData/confusionMatrix.py)
+
+
+
+
+
+
+
+
   
