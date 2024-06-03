@@ -31,9 +31,10 @@ def main():
     bool_columns = ['debt_consolidation', 'home_improvement', 'major_purchase', 'medical', 'other', 'small_business', 'OWN', 'RENT', ' > 1 Year']
     for col in bool_columns:
         X[col] = X[col].astype(int)
-
+                     
     logit_reg_sm = sm.GLM(y_numnbers, X.assign(const=1), family=sm.families.Binomial())
     logit_result = logit_reg_sm.fit()
+    print(logit_result.summary())
     
     formula = "outcome ~ bs(payment_inc_ratio, df=4) + purpose_" + \
         " + home_ + emp_len_ + bs(borrower_score, df=4)"

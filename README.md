@@ -1439,7 +1439,7 @@ C/C++ database arduino raspberrypi IoT
 
 
 - 데이터 과학을 위한 통계
-  - 5장 분류
+  - chapter5 분류
     - 로지스틱 회귀
       - ***logisticRegression.py*** [로지스틱 회귀](python/pythonData/logisticRegression.py)
 
@@ -1447,6 +1447,22 @@ C/C++ database arduino raspberrypi IoT
 
     - 분류 모델 평가
       - ***confusionMatrix.py*** [conf_mat](python/pythonData/confusionMatrix.py)
+
+      - ***rocCurve.py*** [rocCurve](python/pythonData/rocCurve.py)
+      - ***aucCurve.py*** [aucCurve](python/pythonData/aucCurve.py)
+
+  - chapter6 통계적 머신러닝
+    - KNN(k-nearest neighbors)
+      - 1. 특징들이 가장 유사한 k개의 레코드를 찾는다.
+      - 2. 분류: 이 유사한 레코드들 중에 다수가 속한 클래스가 무엇인지 찾은 후에, 새로운 레코드를 그 클래스에 할당한다.
+      - 3. 예측(KNN 회귀: KNN regression): 유사한 레코드들의 평균을 찾아서 새로운 레코드에 대한 예측값으로 사용한다.
+    
+      - ***knnTest.py*** [knnTest](python/pythonData/knnTest.py)
+      - ***knn2Test.py*** [knn2Test](python/pythonData/knn2Test.py)
+      - ***featureEngineering.py*** [KNN을 통한 featureEngineering](python/pythonData/featureEngineering.py)
+
+
+
 
 
 
