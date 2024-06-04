@@ -1431,14 +1431,14 @@ C/C++ database arduino raspberrypi IoT
 ## 2024-06-03 월
 -----------------
 
-- 복습
+- **복습**
   - 지도학습
     - 회귀(Regression)
     - 분류(Classification): 나이브 베이즈, 판별분석
   - 비지도학습: target이 없음
 
 
-- 데이터 과학을 위한 통계
+- **데이터 과학을 위한 통계**
   - chapter5 분류
     - 로지스틱 회귀
       - ***logisticRegression.py*** [로지스틱 회귀](python/pythonData/logisticRegression.py)
@@ -1468,15 +1468,30 @@ C/C++ database arduino raspberrypi IoT
       - ***decisionTreeTest.py*** [decisionTree](pytorch/decisionTreeTest.py)
 
 
+## 2024-06-04 화
+-----------------
+- **데이터 과학을 위한 통계**
+  - chapter 6 통계적 머신러닝
+    - 6.3 배깅과 랜덤 포레스트
+      - 앙상블: 여러 모델의 집합을 이용해서 하나의 예측을 이끌어내는 방식
+      - 배깅: 데이터를 부트스트래핑해서 여러 모델을 만드는 일반적인 방법. 배깅은 다양한 모델들을 정확히 같은 데이터에 대해 구하는 대신, 매번 부트스트랩 재표본에 대해 새로운 모델을 만든다.
+
+      - 랜덤 포레스트
+        - ***randomForestTest.py*** [랜덤 포레스트](python/pythonData/randomForestTest.py)
+      
+      - ***variableImportance.py*** [](python/pythonData/variableImportance.py)
+      - ***variableImportance.ipynb*** [](python/pythonData/variableImportance.ipynb)
+
+      - ***xgboostTest.py*** [xgboostTest](python/pythonData/xgboostTest.py)
+      - ***overfitting.ipynb*** [overfitting](python/pythonData/overfitting.ipynb)
 
 
+  - chapter 7 비지도 학습
+    - 7.1 주성분분석 (PCA)
+      - ***pcaTest.py*** [pcaTest](python/pythonData/pcaTest.py)
+      - ***pcaTest2.py*** [pcaTest2](python/pythonData/pcaTest2.py)
+      - ***pcaTest3.py*** [pca데이터로 범주형도 클러스터링 할 수 있다](python
+      /pythonData/pcaTest3.py)
 
-
-
-
-
-
-
-
-
-  
+    - 7.2 k-평균 클러스터링
+      - ***kMeanClustering.py*** [k-평균 클러스터링](python/pythonData/kMeanClustering.py)
