@@ -1495,3 +1495,15 @@ C/C++ database arduino raspberrypi IoT
 
     - 7.2 k-평균 클러스터링
       - ***kMeanClustering.py*** [k-평균 클러스터링](python/pythonData/kMeanClustering.py)
+
+
+
+## 2024-06-04 화
+-----------------
+- **데이터 과학을 위한 통계**
+  - chapter 7 비지도학습
+    - 7.2 k-평균 클러스터링
+      - ***kMeanClustering2.py*** [kMeanClustering2](python/pythonData/kMeanClustering2.py)
+      - ***kMeanClusteringDeterminN.py*** [kMeanClusteringDeterminN](python/pythonData/kMeanClusteringDeterminN.py)
+    - 7.3 계층적 클러스터링
+      - ***hierarchicalClustering.py*** [계층적 클러스터링](python/pythonData/hierarchicalClustering.py)
