@@ -1507,3 +1507,8 @@ C/C++ database arduino raspberrypi IoT
       - ***kMeanClusteringDeterminN.py*** [kMeanClusteringDeterminN](python/pythonData/kMeanClusteringDeterminN.py)
     - 7.3 계층적 클러스터링
       - ***hierarchicalClustering.py*** [계층적 클러스터링](python/pythonData/hierarchicalClustering.py)
+    - 7.4 모델 기반 클러스터링
+      - ***normalMixture.py*** [normalMixture](python/pythonData/normalMixture.py)
+    - 7.5 스케일링과 범주형 변수
+      - ***dominantVariable.py*** [지배 변수](python/pythonData/dominantVariable.py)
+      - ***gowersDistance.py*** [범주형 데이터와 고워 거리](python/pythonData/gowersDistance.py)
