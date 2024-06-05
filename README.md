@@ -1512,3 +1512,6 @@ C/C++ database arduino raspberrypi IoT
     - 7.5 스케일링과 범주형 변수
       - ***dominantVariable.py*** [지배 변수](python/pythonData/dominantVariable.py)
       - ***gowersDistance.py*** [범주형 데이터와 고워 거리](python/pythonData/gowersDistance.py)
+
+- kaggle에서 titanic_machine learning from disaster 해보기
+  - kaggle에서 data 가져와 colab에서 실습
