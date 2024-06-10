@@ -1515,3 +1515,30 @@ C/C++ database arduino raspberrypi IoT
 
 - kaggle에서 titanic_machine learning from disaster 해보기
   - kaggle에서 data 가져와 colab에서 실습
+
+
+## 2024-06-10 월
+-----------------
+
+- 머신러닝
+  - 데이터 전처리 전략
+    - 결측치 처리하기: 드롭과 채우기(drop & fill)
+    - 범주형 데이터 처리하기: 원핫인코딩(one-hot encoding)
+    - 범주형 데이터로 변환하여 처리하기: 바인딩(binding)
+    - 데이터의 크기 맞추기: 피쳐 스케일링(feature scaling)
+
+
+  - ***dropProcessing.py*** [데이터 전처리 드롭](pythonML/dropProcessing.py)
+  - ***fillProcessing.py*** [데이터 전처리 채우기](pythonML/fillProcessing.py)
+
+  - ***get_dummiesTest.py*** [get dummies](pythonML/get_dummiesTest.py)
+  - ***bindingTest.py*** [binding](pythonML/bindingTest.py)
+  - ***featureScaling.py*** [feature scaling](pythonML/featureScaling.py)
+
+  - 머신러닝 회귀귀법
+    - ***gradientDescent.py*** [경사하강법 알고리즘](pythonML/gradientDescent.py)
+    - ***testAndSplit.py*** [선형회귀 성능측정.훈련/테스트 분할](pythonML/testAndSplit.py)
+    - ***maeRmseR2.py*** [선형회귀 성능 측정 지표](pythonML/maeRmseR2.py)
+    - ***linearRegressionCustom.py*** [경사하강법으로 linear regression](pythonML/linearRegressionCustom.py)
+
+  
