@@ -1557,7 +1557,10 @@ C/C++ database arduino raspberrypi IoT
   
 
 - chap 8 선형회귀의 심화
-  -  ***LinearRSGDTest_20240611.py*** [로버스트 확률적 경사 하강법(RSGD)](pythonML/LinearRSGDTest_20240611.py)
+  - ***LinearRSGDTest.py*** [로버스트 확률적 경사 하강법(RSGD)](pythonML/LinearRSGDTest.py)
+  - ***LinearRSGDMain.py*** [로버스트 확률적 경사 하강법(RSGD)](pythonML/LinearRSGDMain.py)
+  - ***bostonHouseRegression.py*** [보스턴 하우스 회귀](pythonML/bostonHouseRegression.py)
+  - ****** []()
 
 
   
