@@ -1554,13 +1554,17 @@ C/C++ database arduino raspberrypi IoT
       - 정규화를 해야한다 -> 정규화, z스코어 정규화
     
     - 회귀이론 ->  y = f(x) f()가 모델, y = w1x + w0 (w1값과 w0값을 구하는게 훈련)
-  
+
 
 - chap 8 선형회귀의 심화
   - ***LinearRSGDTest.py*** [로버스트 확률적 경사 하강법(RSGD)](pythonML/LinearRSGDTest.py)
   - ***LinearRSGDMain.py*** [로버스트 확률적 경사 하강법(RSGD)](pythonML/LinearRSGDMain.py)
   - ***bostonHouseRegression.py*** [보스턴 하우스 회귀](pythonML/bostonHouseRegression.py)
-  - ****** []()
+  - ***confusionMatrixTest.py*** [confusion Matrix](pythonML/confusionMatrixTest.py)
+  - ***bindingTest.py*** [binding Test](pythonML/bindingTest.py)
+  - ***LogisticRegressionTest.py*** [Logistic Regression](pythonML/LogisticRegressionTest.py)
+  - ***softmaxTest.py*** [softmax Test](pythonML/softmaxTest.py)
+  - ***mnistClassify.ipynb*** [mnistClassify](pythonML/mnistClassify.ipynb)
 
 
   
