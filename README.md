@@ -1541,4 +1541,23 @@ C/C++ database arduino raspberrypi IoT
     - ***maeRmseR2.py*** [선형회귀 성능 측정 지표](pythonML/maeRmseR2.py)
     - ***linearRegressionCustom.py*** [경사하강법으로 linear regression](pythonML/linearRegressionCustom.py)
 
+
+## 2024-06-11 화
+-----------------
+
+- 복습
+  - 머신러닝
+    - chap6 데이터 전처리
+      - 범주 -> 수치형
+      - non(결측치) -> pandas의 drop, fill 메소드
+      - 이상치 처리를 하면 데이터가 더 정확해진다.
+      - 정규화를 해야한다 -> 정규화, z스코어 정규화
+    
+    - 회귀이론 ->  y = f(x) f()가 모델, y = w1x + w0 (w1값과 w0값을 구하는게 훈련)
+  
+
+- chap 8 선형회귀의 심화
+  -  ***LinearRSGDTest_20240611.py*** [로버스트 확률적 경사 하강법(RSGD)](pythonML/LinearRSGDTest_20240611.py)
+
+
   
