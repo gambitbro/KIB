@@ -1,3 +1,4 @@
+# 나이브 베이지안 분류기
 import pandas as pd
 import numpy as np
 

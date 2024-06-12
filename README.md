@@ -1579,7 +1579,9 @@ C/C++ database arduino raspberrypi IoT
   - 로지스틱
 
 - chap 11 나이브 베이지안 분류기
-  - 
+  - ***simpleBayze.py*** []()
+  - ***sportsNaiveBayze.py*** []()
+  - ***d*** []()
 
 
 
