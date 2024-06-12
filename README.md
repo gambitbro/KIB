@@ -1567,4 +1567,20 @@ C/C++ database arduino raspberrypi IoT
   - ***mnistClassify.ipynb*** [mnistClassify](pythonML/mnistClassify.ipynb)
 
 
+## 2024-06-12 수
+-----------------
+- 복습
+  - 선형회귀
+    - 1. 방적식 풀기: 최소자승법
+      - 빠르다, 중간과정 없음
+    - 2. 차근차근 접근: 경사하강법(GD)
+      - 국소적으로만 보게되는 단점이 있다 -> 확률적 경사하강법 사용
+    
+  - 로지스틱
+
+- chap 11 나이브 베이지안 분류기
+  - 
+
+
+
   
