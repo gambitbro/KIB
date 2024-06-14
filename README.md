@@ -1584,5 +1584,21 @@ C/C++ database arduino raspberrypi IoT
   - ***d*** []()
 
 
+## 2024-06-14 금
+-----------------
+- hanback전자의 XNode 장비 다루기(윈도우 환경에서 작업)
+ - 1. c드라이브 루트에 hanback 폴더 만들어서 장비에 있는 usb 파일 옮김
+   2. B타입 컴퓨터에 연결 (B타입은 bluetooth, zigbee 지원 / A타입은 와이파이 있음)
+   3. VScode 실행 
+   4.  복사한 폴더 안의 Software -> Windows64 폴더 안 압축파일 풀고 Soda IDE설치
+   5. C드라이브 루트에 Xnode 폴더 생성()
+   6. SodaIDE 폴더 안의 VScode 실행 -> Xnode 폴더 열기
+   7. app.py 파일 생성(main파일, 파일 이름은 app으로 고정)
+   8. 옮겼던 파일 중 lib 파일을 만들어둔 Xnode 폴더에 복사(라이브러리 가져오기)
+   9. app.py 작성 및 진행 (해당 파일안에 진행사항 있음)
+
+ - Xnode폴더 안 CORE 폴더의 py파일들
+
+
 
   
