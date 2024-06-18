@@ -36,11 +36,11 @@ int main(void)
     
     double re2;
     pop(&q2, &re2);
-    printf("1st pop() : %d\n", re2);
+    printf("1st pop() : %f\n", re2);
     pop(&q2, &re2);
-    printf("2nd pop() : %d\n", re2);
+    printf("2nd pop() : %f\n", re2);
     pop(&q2, &re2);
-    printf("3rd pop() : %d\n", re2);
+    printf("3rd pop() : %f\n", re2);
 
     clearQueue(&q1);
     clearQueue(&q2);

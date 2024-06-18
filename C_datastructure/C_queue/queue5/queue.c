@@ -4,15 +4,15 @@
 #include <string.h>
 #include "queue.h"
 
-void push(Queue *pq, int *qData)
+void push(Queue *pq, const void *qData)
 {
     assert(pq->rear != pq->size);
 
-    memcpy( (unsigned char*)pq->qArr + (pq->rear * pq->eleSize), qData, pq->eleSize);
+    memcpy( (unsigned char*)pq->qArr + (pq->rear * pq->eleSize), qData, pq->eleSize );
     ++pq->rear;
 }
 
-void pop(Queue *pq, int *qData)
+void pop(Queue *pq, void *qData)
 {
     //assert(pq->front != 0);
     
