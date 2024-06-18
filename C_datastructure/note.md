@@ -9,6 +9,8 @@
         함수가 실행되는 메모리를 stack이라 부르는 이유 -> 가장 마지막에 호출된 함수가 가장 먼저 사라지기 때문
 
     2) queue
+        **first-in-first-out**
+        
     3) linked list
     4) tree
     5) graph
@@ -29,3 +31,23 @@ stack.c를 만든 사람이 함수 선언이 들어가있는 stack.h도 제공 >
             int tos;
 
         } Stack;
+
+
+- Generic Program
+    메모리 상에 존재하는 모든 데이터는 -> (시작주소, size) 만 알면 다 다룰 수 있다.
+    <string.h>
+        memset()
+        memcpy()
+        memcmp()
+
+    int a, b
+    a = 0;
+        memset(&a, 0, sizeof(int));
+    b = a;
+        memcpy(&b, &a, sizeof(int));
+    a == b;
+        memcmp(&b, &a, sizeof(int)); //0이면 같다.
+
+
+
+    **queue sort 함수**

@@ -17,7 +17,7 @@ void push(Stack *ps, int data)
     ps->tos++;
 }
 
-int pop(Stack *ps)
+void pop(Stack *ps, int *pData)
 {
 //     // empty?
 //     if (ps->tos == 0){
@@ -27,7 +27,8 @@ int pop(Stack *ps)
     assert(ps->tos != 0);
 
     ps->tos--;
-    return ps->pArr[ps->tos];
+    // return ps->pArr[ps->tos];
+    *pData = ps->pArr[ps->tos];
 }
 
 void initStack(Stack *ps, int size)

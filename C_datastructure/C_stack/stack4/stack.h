@@ -16,7 +16,8 @@ void clearStack(Stack *ps);
 
 
 void push(Stack *ps, int data);     // function declaration
-int pop(Stack *ps);
+//int pop(Stack *ps);
+void pop(Stack *ps, int *pData);
 
 
 #endif
