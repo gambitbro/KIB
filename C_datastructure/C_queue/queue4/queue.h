@@ -1,15 +1,21 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-struct queue {
-    int qArr[100];
+typedef struct queue {
+    void *qArr;
+    int size;
+    int eleSize;
     int front;
     int rear;
-};
+} Queue;
 
-void push(struct queue *q, int data);
-int pop(struct queue *q);
-void initQueue(struct queue *q);
+void initQueue(Queue *pq, int size, int eleSize);
+void clearQueue(Queue *pq);
+
+
+void push(Queue *pq, const void *qData);
+void pop(Queue *pq, void *qData);
+
 
 
 #endif
