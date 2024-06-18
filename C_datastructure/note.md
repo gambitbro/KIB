@@ -16,7 +16,6 @@
     5) graph
 
 
-
 cc -c main.c -> main.o 생성
 cc -c stack.c -> stack.o 생성
 cc -o test main.o stack.o -> test라는 이름의 실행파일 만들기(main.o, stack.o 사용) 
@@ -47,7 +46,6 @@ stack.c를 만든 사람이 함수 선언이 들어가있는 stack.h도 제공 >
         memcpy(&b, &a, sizeof(int));
     a == b;
         memcmp(&b, &a, sizeof(int)); //0이면 같다.
-
 
 
     **queue sort 함수**
