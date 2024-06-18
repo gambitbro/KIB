@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <string.h>
 #include "queue.h"
 
-void push(Queue *pq, int data)
+void push(Queue *pq, int *qData)
 {
     assert(pq->rear != pq->size);
 
-    pq->qArr[pq->rear] = data;
+    memcpy( (unsigned char*)pq->qArr + (pq->rear * pq->eleSize), qData, pq->eleSize);
     ++pq->rear;
 }
 
@@ -17,14 +18,14 @@ void pop(Queue *pq, int *qData)
     
     int i = pq->front;
     ++pq->front;
-    // return pq->qArr[i];    // return 뒤에 front 값이 증가해야 하기 때문에, 임시변수 i를 써서 증가되기 전 front값을 빼낸다.
-    *qData = pq->qArr[i];
+    memcpy(qData, (unsigned char*)pq->qArr + (i * pq->eleSize), pq->eleSize);
 }
 
-void initQueue(Queue *pq, int size)
+void initQueue(Queue *pq, int size, int eleSize)
 {
     pq->qArr = malloc(sizeof(int) * size);
     pq->size = size;
+    pq->eleSize = eleSize;
     pq->front = 0;
     pq->rear = 0;
 }

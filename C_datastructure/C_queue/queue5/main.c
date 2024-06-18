@@ -5,14 +5,18 @@ int main(void)
 {
 
     struct queue q1, q2;
-    initQueue(&q1, 10);
-    initQueue(&q2, 100);
 
-    push(&q1, 100);
-    push(&q1, 200);
-    push(&q1, 300);
+    initQueue(&q1, 10, sizeof(int));
+    initQueue(&q2, 100, sizeof(double));
+
+    int i;
+    i = 100;
+    push(&q1, &i);
+    i = 200;
+    push(&q1, &i);
+    i = 300;
+    push(&q1, &i);
     
-
     int re;
     pop(&q1, &re);
     printf("1st pop() : %d\n", re);
@@ -22,16 +26,21 @@ int main(void)
     printf("3rd pop() : %d\n", re);
 
 
-    push(&q2, 900);
-    push(&q2, 800);
-    push(&q2, 700);
+    double d;
+    d = 1.1;
+    push(&q2, &d);
+    d = 2.2;
+    push(&q2, &d);
+    d = 3.3;
+    push(&q2, &d);
     
-    pop(&q2, &re);
-    printf("1st pop() : %d\n", re);
-    pop(&q2, &re);
-    printf("2nd pop() : %d\n", re);
-    pop(&q2, &re);
-    printf("3rd pop() : %d\n", re);
+    double re2;
+    pop(&q2, &re2);
+    printf("1st pop() : %d\n", re2);
+    pop(&q2, &re2);
+    printf("2nd pop() : %d\n", re2);
+    pop(&q2, &re2);
+    printf("3rd pop() : %d\n", re2);
 
     clearQueue(&q1);
     clearQueue(&q2);
