@@ -15,7 +15,7 @@ int main(void)
     insertNode(&list, 1, 2);
     printList(&list);
 
-    deleteList(&list, 3);
+    deleteNode(&list, 3);
     printList(&list);
 
     cleanupList(&list);

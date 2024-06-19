@@ -4,7 +4,7 @@
 #include "list.h"
 
 
-static Node createNode(int data, Node *next)
+static Node * createNode(int data, Node *next)
 {
     Node *p = malloc(sizeof(Node));
     assert(p);
@@ -60,7 +60,7 @@ void insertNode(List *pList, int prevData, int data)
         // p2->data = data;
         // p2->next = p->next;
         // p->next = p2;
-        p->next = creatNode(data, p->next);
+        p->next = createNode(data, p->next);
     }
 }
 

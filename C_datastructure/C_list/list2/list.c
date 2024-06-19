@@ -9,7 +9,7 @@ void initList(List *pList)
     pList->ptr = malloc(sizeof(Node)); //더미노드 생성
     assert(pList->ptr);
 
-    pList->ptr->data = ???;             // dummy
+    //pList->ptr->data = ???;             // dummy
     pList->ptr->next = NULL;            // 더미노드는 처음 아무것도 가리키지않음
 
 }
