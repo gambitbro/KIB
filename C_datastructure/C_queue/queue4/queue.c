@@ -13,17 +13,17 @@ void push(Queue *pq, int data)
 
 void pop(Queue *pq, int *qData)
 {
-    //assert(pq->front != 0);
+    assert(pq->front != pq->rear);
     
     int i = pq->front;
     ++pq->front;
-    // return pq->qArr[i];    // return 뒤에 front 값이 증가해야 하기 때문에, 임시변수 i를 써서 증가되기 전 front값을 빼낸다.
+    // return pq->qArr[i];  // 결과값은 매개변수를 통해 빼낸다
     *qData = pq->qArr[i];
 }
 
 void initQueue(Queue *pq, int size)
 {
-    pq->qArr = malloc(sizeof(int) * size);
+    pq->qArr = (int*)malloc(sizeof(int) * size);
     pq->size = size;
     pq->front = 0;
     pq->rear = 0;

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 #include "queue.h"
 
 void push(struct queue *pq, int data)
@@ -16,7 +17,7 @@ void push(struct queue *pq, int data)
 int pop(struct queue *pq)
 {
     // empty?
-    if (pq->front < 0){
+    if (pq->front == pq->rear){
         fprintf(stderr, "queue is empty\n");
         exit(2);
     }

@@ -1,3 +1,4 @@
+
 static int queue[100];
 static int rear; // 들어갈 위치
 static int front; // 빼낼 위치

@@ -2,7 +2,7 @@
 #define QUEUE_H
 
 typedef struct queue {
-    void *qArr;
+    void *pArr;
     int size;
     int eleSize;
     int front;
@@ -13,8 +13,8 @@ void initQueue(Queue *pq, int size, int eleSize);
 void clearQueue(Queue *pq);
 
 
-void push(Queue *pq, const void *qData);
-void pop(Queue *pq, void *qData);
+void push(Queue *pq, const void *pData);
+void pop(Queue *pq, void *pData);
 
 
 

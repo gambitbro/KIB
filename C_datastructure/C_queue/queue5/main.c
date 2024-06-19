@@ -1,3 +1,5 @@
+// generic program for queue
+
 #include <stdio.h>
 #include "queue.h"
 
@@ -10,8 +12,8 @@ int main(void)
     initQueue(&q2, 100, sizeof(double));
 
     int i;
-    i = 100;
-    push(&q1, &i);
+    i = 100;            //변수에 넣고싶은 값을 넣고
+    push(&q1, &i);      //주소값을 전달, 사이즈는 이미 구조체가 가지고있음
     i = 200;
     push(&q1, &i);
     i = 300;

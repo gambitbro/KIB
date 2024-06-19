@@ -6,7 +6,7 @@ int main(void)
 
     struct queue q1, q2;
     initQueue(&q1, 10);
-    initQueue(&q2, 100);
+    initQueue(&q2, 100);        //뒤는 배열의 크기
 
     push(&q1, 100);
     push(&q1, 200);

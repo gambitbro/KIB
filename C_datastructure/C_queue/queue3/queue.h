@@ -7,9 +7,9 @@ struct queue {
     int rear;
 };
 
-void push(struct queue *q, int data);
-int pop(struct queue *q);
-void initQueue(struct queue *q);
+void push(struct queue *pq, int data);
+int pop(struct queue *pq);
+void initQueue(struct queue *pq);
 
 
 #endif

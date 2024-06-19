@@ -4,26 +4,30 @@
 #include <string.h>
 #include "queue.h"
 
-void push(Queue *pq, const void *qData)
+void push(Queue *pq, const void *pData)
 {
     assert(pq->rear != pq->size);
 
-    memcpy( (unsigned char*)pq->qArr + (pq->rear * pq->eleSize), qData, pq->eleSize );
+    memcpy( (unsigned char*)pq->pArr + (pq->rear * pq->eleSize), pData, pq->eleSize );
+    //memcpy( &pq->pArr + (pq->rear * pq->eleSize), pData, pq->eleSize );
     ++pq->rear;
 }
 
-void pop(Queue *pq, void *qData)
+void pop(Queue *pq, void *pData)
 {
-    //assert(pq->front != 0);
+    assert(pq->front != pq->rear);
     
     int i = pq->front;
     ++pq->front;
-    memcpy(qData, (unsigned char*)pq->qArr + (i * pq->eleSize), pq->eleSize);
+    memcpy(pData, (unsigned char*)pq->pArr + (i * pq->eleSize), pq->eleSize);
+    //memcpy( pData, &pq->pArr + (i * pq->eleSize), pq->eleSize );
 }
 
 void initQueue(Queue *pq, int size, int eleSize)
 {
-    pq->qArr = malloc(sizeof(int) * size);
+    pq->pArr = malloc(eleSize * size);
+    assert(pq->pArr /*!= NULL*/);
+
     pq->size = size;
     pq->eleSize = eleSize;
     pq->front = 0;
@@ -32,5 +36,5 @@ void initQueue(Queue *pq, int size, int eleSize)
 
 void clearQueue(Queue *pq)
 {
-    free(pq->qArr);
+    free(pq->pArr);
 }
