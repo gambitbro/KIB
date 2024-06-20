@@ -773,7 +773,7 @@ C/C++ database arduino raspberrypi IoT
           - erodeDilate.cpp
           - mophologyEX.cpp
 
-    - 수업(12장)
+    - 수업(12장d
       - 레이블링과 외곽선 검출
         - 레이블링(labeling)
           - 객체 구역을 영역 단위로 분석.
